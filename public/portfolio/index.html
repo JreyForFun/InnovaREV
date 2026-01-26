@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="InnovaREV Portfolio - See our recent projects in web development, mobile apps, and software.">
+  <title>Our Portfolio | InnovaREV</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/pages.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <a href="../../public/index.html" class="logo">
+        <img src="../../assets/images/logo.png" alt="InnovaREV Logo" loading="lazy"><span
+          class="logo-text">InnovaREV</span>
+      </a>
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../../public/index.html" class="nav-link">Home</a>
+        <a href="../../public/about.html" class="nav-link">About Us</a>
+        <a href="../services/index.html" class="nav-link">Services</a>
+        <a href="index.html" class="nav-link text-accent">Portfolio</a>
+        <a href="../../public/blog/index.html" class="nav-link">Blog</a>
+        <a href="../../public/contact.html" class="btn btn-sm btn-primary">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="service-header">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb" style="justify-content: center; margin-bottom: var(--spacing-sm);">
+          <li class="breadcrumb-item"><a href="../../public/index.html" style="color: #ccc;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style="color: white; font-weight: bold;">Portfolio</li>
+        </ul>
+      </nav>
+      <h1>Our Work</h1>
+      <p style="color: #E0E0E0;">Explore how we've helped businesses transform and grow.</p>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      
+      <div style="max-width: 500px; margin: 0 auto var(--spacing-lg); position: relative;">
+        <input type="text" id="portfolioSearch" placeholder="Search projects by title, description or tag..."
+          style="width: 100%; padding: 14px 24px; padding-right: 50px; border-radius: 50px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-family: inherit; font-size: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: all 0.3s ease; outline: none;">
+        <span
+          style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #333; pointer-events: none; font-size: 1.2rem;"><i
+            class="fas fa-search"></i></span>
+      </div>
+
+      <div class="portfolio-filter" id="portfolioFilter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="app">Mobile Apps</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+      </div>
+
+      <div class="grid grid-3" id="portfolioGrid">
+        
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/penguin-portfolio.png" alt="Penguin Portfolio"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Interactive</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Pengfolio</h3>
+          <p class="text-medium text-small"></p>
+          <a href="https://jreyforfun.github.io/pengfolio/" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/86e7a492-a483-4069-9beb-a0c5a7431846.jpg" alt="Business Template 16"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Interactive</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Whispr</h3>
+          <p class="text-medium text-small">Anonymous Video Chat Call Platform that matches you with Random Peoples.</p>
+          <a href="https://whispr-psi.vercel.app/" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/va-portfolio.png" alt="Virtual Assistant Portfolio"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Virtual Assistant Services</h3>
+          <p class="text-medium text-small">Professional portfolio for virtual assistants featuring service showcase and
+            client testimonials.</p>
+          <a href="../../portfolio_templates/perso_1/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/developer-portfolio.png" alt="Developer Portfolio"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Full Stack Developer</h3>
+          <p class="text-medium text-small">Clean, code-focused portfolio for software developers with GitHub
+            integration.</p>
+          <a href="../../portfolio_templates/perso_3/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="ecommerce">
+          <img src="../../assets/images/portfolio/kusina.png" alt="Business Template 3"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Food & Drink</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Organic Health Foods</h3>
+          <p class="text-medium text-small">Restaurant website featuring healthy, organic, and natural food options.</p>
+          <a href="../../resto_templates/buss_3/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/pengkowts.png" alt="Penguin Portfolio"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Interactive</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Pengkowts</h3>
+          <p class="text-medium text-small">Your personal sanctuary for wisdom and inspiration.
+
+            PengKowts is a modern, privacy-first quote management application designed for mindful reading. </p>
+          <a href="https://jreyforfun.github.io/PengKowts/" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/samantha.png" alt="Portfolio Template 6"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Event & Marketing VA</h3>
+          <p class="text-medium text-small">Specialized portfolio for event management and marketing virtual assistants.
+          </p>
+          <a href="../../portfolio_templates/perso_6/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/modicate.png" alt="Business Template 6"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Business</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Digital Creative Agency</h3>
+          <p class="text-medium text-small">Agency website for web design, branding, and digital marketing services.</p>
+          <a href="../../resto_templates/buss_6/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+        
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/illustratordragneel.png" alt="Portfolio Template 2"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Web Developer & Enthusiast</h3>
+          <p class="text-medium text-small">Personal portfolio for developers and tech enthusiasts highlighting projects
+            and skills.</p>
+          <a href="../../portfolio_templates/perso_2/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/unending-portfolio.png" alt="Portfolio Template 4"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Creative Professional</h3>
+          <p class="text-medium text-small">Versatile portfolio for creatives, agencies, and freelancers to showcase
+            their work.</p>
+          <a href="../../portfolio_templates/perso_4/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/amanda.png" alt="Portfolio Template 7"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Amanda Kime - VA</h3>
+          <p class="text-medium text-small">Modern virtual assistant portfolio focusing on entrepreneur support
+            services.</p>
+          <a href="../../portfolio_templates/perso_7/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/uiux.png" alt="Portfolio Template 8"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">UI/UX Designer Portfolio</h3>
+          <p class="text-medium text-small">Showcase for user interface and experience designers with case study
+            layouts.</p>
+          <a href="../../portfolio_templates/perso_8/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/webidev.png" alt="Portfolio Template 8"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Web Development</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">The WebiDev Project</h3>
+          <p class="text-medium text-small">Comprehensive web development showcase featuring modern frameworks,
+            responsive design, and best practices.</p>
+          <a href="https://jreyforfun.github.io/The-WebiDev-Project/" target="_blank"
+            class="text-primary font-bold">View Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/brutalabs.png" alt="Portfolio Template 8"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Design</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Brutalabs - Brutalist Design</h3>
+          <p class="text-medium text-small">Bold brutalist design portfolio with raw aesthetics and unconventional
+            layouts.</p>
+          <a href="https://jreyforfun.github.io/Brutalabs/" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/penguindot.png" alt="Portfolio Template 8"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Interactive</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">PenguDOT - Interactive Experience</h3>
+          <p class="text-medium text-small">Engaging interactive web experience with dynamic animations and user
+            interactions.</p>
+          <a href="https://jreyforfun.github.io/PenguDOT/" target="_blank" class="text-primary font-bold">View Live Demo
+            →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/vcco.png" alt="Portfolio Template 9"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Strategic Support & Backend</h3>
+          <p class="text-medium text-small">Backend operations and strategy portfolio for high-level business support
+            professionals.</p>
+          <a href="../../portfolio_templates/perso_9/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/tova.png" alt="Portfolio Template 10"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">The Organised VA</h3>
+          <p class="text-medium text-small">Professional portfolio emphasizing organization, admin support, and
+            efficiency.</p>
+          <a href="../../portfolio_templates/perso_10/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/arch.png" alt="Portfolio Template 11"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Digital Experience Designer</h3>
+          <p class="text-medium text-small">Portfolio for UX/UI designers focusing on digital product design and
+            research.</p>
+          <a href="../../portfolio_templates/perso_11/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/initialize.png" alt="Portfolio Template 12"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Backend Engineer Terminal</h3>
+          <p class="text-medium text-small">Unique terminal-style portfolio for backend engineers and command-line
+            lovers.</p>
+          <a href="../../portfolio_templates/perso_12/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/nature.png" alt="Portfolio Template 13"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Architect & Visual Artist</h3>
+          <p class="text-medium text-small">Portfolio for architects and visualization experts dealing with space and
+            light.</p>
+          <a href="../../portfolio_templates/perso_13/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/btobsaas.png" alt="Portfolio Template 14"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Growth Marketer</h3>
+          <p class="text-medium text-small">Portfolio for data-driven marketing professionals and growth hackers.</p>
+          <a href="../../portfolio_templates/perso_14/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/dailydraft.png" alt="Portfolio Template 15"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Portfolio</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">The Daily Draft</h3>
+          <p class="text-medium text-small">Editorial and writer portfolio for journalists, authors, and content
+            creators.</p>
+          <a href="../../portfolio_templates/perso_15/index.html" target="_blank" class="text-primary font-bold">View
+            Live Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="ecommerce">
+          <img src="../../assets/images/portfolio/paw.png" alt="Business Template 2"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">E-Commerce</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Premium Pet Care</h3>
+          <p class="text-medium text-small">E-commerce and service site for pet supplies, grooming, and care.</p>
+          <a href="../../resto_templates/buss_2/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="ecommerce">
+          <img src="../../assets/images/portfolio/luigipizza.png" alt="Business Template 4"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Food & Drink</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Authentic Italian Pizza</h3>
+          <p class="text-medium text-small">Pizzeria website with menu display, online ordering, and delivery options.
+          </p>
+          <a href="../../resto_templates/buss_4/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="ecommerce">
+          <img src="../../assets/images/portfolio/sneaky.png" alt="Business Template 5"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Food & Drink</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Gourmet Burger Joint</h3>
+          <p class="text-medium text-small">Modern fast-casual dining website for burger restaurants.</p>
+          <a href="../../resto_templates/buss_5/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/hilux.png" alt="Business Template 7"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Hospitality</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Luxury Hotel & Resort</h3>
+          <p class="text-medium text-small">Hospitality website for hotels and resorts with booking integration.</p>
+          <a href="../../resto_templates/buss_7/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/stately.png" alt="Business Template 10"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Real Estate</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Real Estate Agency</h3>
+          <p class="text-medium text-small">Real estate website for property listings, agents, and housing market
+            services.</p>
+          <a href="../../resto_templates/buss_10/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/kl.png" alt="Business Template 13"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Travel</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Hostel & Travel</h3>
+          <p class="text-medium text-small">Budget accommodation and travel service website for backpackers.</p>
+          <a href="../../resto_templates/buss_13/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/wondertour.png" alt="Business Template 14"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Travel</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Travel & Tours</h3>
+          <p class="text-medium text-small">Adventure travel agency website with tour packages and booking.</p>
+          <a href="../../resto_templates/buss_14/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/galenical.png" alt="Business Template 15"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Business</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">International Trade</h3>
+          <p class="text-medium text-small">Global trading and market analysis website for import/export businesses.</p>
+          <a href="../../resto_templates/buss_15/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="web">
+          <img src="../../assets/images/portfolio/archery.png" alt="Business Template 16"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Sports</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Archery Academy</h3>
+          <p class="text-medium text-small">Sports club and training academy website for archery enthusiasts.</p>
+          <a href="../../resto_templates/buss_16/index.html" target="_blank" class="text-primary font-bold">View Live
+            Demo →</a>
+        </article>
+
+        <article class="card portfolio-item" data-category="software">
+          <img src="../../assets/images/portfolio/52750ec8-8f9c-4143-a713-038f4e527de1.jpg" alt="VS Extension"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Pub</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Pengk: Plum Blossom</h3>
+          <p class="text-medium text-small">A soft, elegant VS Code theme inspired by plum blossoms.
+            Featuring deep plum backgrounds, soft petal pink text, and warm pink-lavender highlights for a soothing
+            coding atmosphere.</p>
+        </article>
+
+        <article class="card portfolio-item" data-category="software">
+          <img src="../../assets/images/portfolio/3c7b8d0c-7453-4a88-81f3-5d52aa804d4c.jpg" alt="VS Extension"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Pub</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">ReadMeUp</h3>
+          <p class="text-medium text-small">ReadMeUp is a Visual Studio Code extension that automatically generates a
+            professional README.md file for your project. By analyzing your project's folder structure and file types,
+            it constructs a comprehensive starting point for your documentation.</p>
+        </article>
+
+        <article class="card portfolio-item" data-category="app">
+          <img src="../../assets/images/portfolio/96611a9f-4272-4922-b5d6-5cc7e524af50.jpg" alt="VS Extension"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Pub</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">iGasto</h3>
+          <p class="text-medium text-small">App for budgeting, savings, expenses, and credit tracking.</p>
+        </article>
+
+        <article class="card portfolio-item" data-category="app">
+          <img src="../../assets/images/portfolio/5ddcb374-486e-4b08-9f5a-9a7307b2eb04.jpg" alt="VS Extension"
+            style="width: calc(100% + 48px); max-width: none; height: 200px; object-fit: cover; margin: -24px -24px 24px -24px; display: block;"
+            loading="lazy">
+          <span class="tag">Pub</span>
+          <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">BetterMom</h3>
+          <p class="text-medium text-small">BetterMom is a comprehensive productivity and wellness application designed
+            specifically for moms. It helps users manage their daily tasks, plan meals, keep track of schedules, and
+            receive daily wellness tips to maintain a balanced lifestyle.</p>
+        </article>
+
+      </div>
+
+      <div style="text-align: center; margin-top: var(--spacing-xl);">
+        <button id="loadMoreBtn" class="btn btn-primary">Load More (10 more)</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="../../public/index.html" class="logo"
+            style="display: inline-block; margin-bottom: var(--spacing-sm); filter: brightness(0) invert(1);">
+            <img src="../../assets/images/logo.png" alt="InnovaREV Logo" loading="lazy"><span class="logo-text"
+              style="color: white;">InnovaREV</span>
+          </a>
+          <p style="color: #ccc; font-size: 14px; max-width: 300px;">
+            We build technology that helps businesses grow. Your partner in digital transformation.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="../services/web-development.html">Web Development</a></li>
+            <li><a href="../services/ecommerce.html">E-Commerce</a></li>
+            <li><a href="../services/android-apps.html">Mobile Apps</a></li>
+            <li><a href="../services/coding-services.html">Coding Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="../../public/about.html">About Us</a></li>
+            <li><a href="../../public/portfolio/index.html">Portfolio</a></li>
+            <li><a href="../../public/blog/index.html">Blog</a></li>
+            <li><a href="../../public/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:innovateandrevolution@gmail.com">innovateandrevolution@gmail.com</a></li>
+            <li><a href="tel:09948769852">09948769852</a></li>
+
+            <li>
+              <div style="display: flex; gap: 15px; margin-top: var(--spacing-md);">
+                <a href="https://web.facebook.com/profile.php?id=61585774570012" target="_blank"
+                  style="color: white; font-size: 20px; transition: color 0.3s;" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/innovarev-tbi-96954b391" target="_blank"
+                  style="color: white; font-size: 20px; transition: color 0.3s;" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/innovadotrev/" target="_blank"
+                  style="color: white; font-size: 20px; transition: color 0.3s;" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 InnovaREV. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/portfolio.js"></script>
+
+  <script src="../../assets/js/analytics.js" defer></script>
+</body>
+
+</html>

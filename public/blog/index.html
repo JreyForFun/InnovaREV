@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="InnovaREV Blog - Insights on Web Development, Technology, and Business Growth.">
+  <title>Blog & Insights | InnovaREV</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../../assets/css/variables.css">
+  <link rel="stylesheet" href="../../assets/css/reset.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/blog.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <a href="../../public/index.html" class="logo">
+        <img src="../../assets/images/logo.png" alt="InnovaREV Logo" loading="lazy"><span
+          class="logo-text">InnovaREV</span>
+      </a>
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+      <nav class="nav-links">
+        <a href="../../public/index.html" class="nav-link">Home</a>
+        <a href="../../public/about.html" class="nav-link">About Us</a>
+        <a href="../services/index.html" class="nav-link">Services</a>
+        <a href="../../public/portfolio/index.html" class="nav-link">Portfolio</a>
+        <a href="index.html" class="nav-link text-accent">Blog</a>
+        <a href="../../public/contact.html" class="btn btn-sm btn-primary">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb" style="justify-content: center; margin-bottom: var(--spacing-sm);">
+          <li class="breadcrumb-item"><a href="../index.html" style="color: #ccc;">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page" style="color: white; font-weight: bold;">Blog</li>
+        </ul>
+      </nav>
+      <h1>Insights & News</h1>
+      <p style="color: #E0E0E0;">Latest trends in technology and business.</p>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="blog-layout">
+        
+        <main class="blog-list" id="blogList">
+          
+          <article class="blog-card" data-category="web-dev">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                alt="Web Development" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">January 10, 2026 • Web Development</div>
+              <h2 class="blog-title"><a href="article-template.html">Why Responsive Design Matters in 2026</a></h2>
+              <p class="text-medium">Mobile traffic has surpassed desktop by a significant margin. Learn why relying on
+                old design patterns is costing you customers.</p>
+              <a href="article-template.html" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="tech">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                alt="Technology" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">January 5, 2026 • Technology</div>
+              <h2 class="blog-title"><a href="article-template.html">The Future of AI in Small Business</a></h2>
+              <p class="text-medium">Artificial Intelligence isn't just for tech giants. Discover how practical AI tools
+                can streamline your daily operations.</p>
+              <a href="article-template.html" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card" data-category="ecommerce">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&w=800&q=80"
+                alt="E-Commerce" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">December 28, 2025 • E-Commerce</div>
+              <h2 class="blog-title"><a href="article-template.html">5 Tips to Boost Your Shopify Sales</a></h2>
+              <p class="text-medium">Simple optimizations to your product pages and checkout flow that can increase your
+                conversion rate today.</p>
+              <a href="article-template.html" class="read-more">Read Article →</a>
+            </div>
+          </article>
+        </main>
+
+        <aside class="blog-sidebar">
+          
+          <div class="sidebar-widget">
+            <h3>Search</h3>
+            <div class="form-group">
+              <input type="text" id="searchInput" class="form-control" placeholder="Search articles...">
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Categories</h3>
+            <ul class="category-list">
+              <li><a href="#" class="cat-link" data-cat="all">All Topics</a></li>
+              <li><a href="#" class="cat-link" data-cat="web-dev">Web Development</a></li>
+              <li><a href="#" class="cat-link" data-cat="tech">Technology</a></li>
+              <li><a href="#" class="cat-link" data-cat="ecommerce">E-Commerce</a></li>
+              <li><a href="#" class="cat-link" data-cat="business">Business Growth</a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Newsletter</h3>
+            <p class="text-small" style="margin-bottom: var(--spacing-sm);">Get the latest insights delivered to your
+              inbox.</p>
+            <form action="#">
+              <input type="email" class="form-control" placeholder="Your email address"
+                style="margin-bottom: var(--spacing-sm);">
+              <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">Subscribe</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="../../public/index.html" class="logo"
+            style="display: inline-block; margin-bottom: var(--spacing-sm); filter: brightness(0) invert(1);">
+            <img src="../../assets/images/logo.png" alt="InnovaREV Logo" loading="lazy"><span class="logo-text"
+              style="color: white;">InnovaREV</span>
+          </a>
+          <p style="color: #ccc; font-size: 14px; max-width: 300px;">
+            We build technology that helps businesses grow. Your partner in digital transformation.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="../services/web-development.html">Web Development</a></li>
+            <li><a href="../services/ecommerce.html">E-Commerce</a></li>
+            <li><a href="../services/android-apps.html">Mobile Apps</a></li>
+            <li><a href="../services/coding-services.html">Coding Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="../../public/about.html">About Us</a></li>
+            <li><a href="../../public/portfolio/index.html">Portfolio</a></li>
+            <li><a href="../../public/blog/index.html">Blog</a></li>
+            <li><a href="../../public/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:innovateandrevolution@gmail.com">innovateandrevolution@gmail.com</a></li>
+            <li><a href="tel:09948769852">09948769852</a></li>
+
+            <li>
+              <div style="display: flex; gap: 15px; margin-top: var(--spacing-md);">
+                <a href="https://web.facebook.com/profile.php?id=61585774570012" target="_blank"
+                  style="color: white; font-size: 20px; transition: color 0.3s;" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/innovarev-tbi-96954b391" target="_blank"
+                  style="color: white; font-size: 20px; transition: color 0.3s;" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/innovadotrev/" target="_blank"
+                  style="color: white; font-size: 20px; transition: color 0.3s;" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 InnovaREV. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/blog-search.js"></script>
+
+  <script src="../../assets/js/analytics.js" defer></script>
+</body>
+
+</html>

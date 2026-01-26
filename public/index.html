@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="InnovaREV - Your Complete Tech Solution Partner. Web Development, E-Commerce, Software, and More.">
+    <title>InnovaREV | Innovate. Revolutionize. Deliver.</title>
+
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Page Specific Styles for Home (Move to pages.css later) */
+        .hero {
+            background-image: url('../assets/images/hero-bg.png');
+            background-size: cover;
+            background-position: center;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 31, 63, 0.90) 0%, rgba(0, 31, 63, 0.75) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero-lead {
+            font-size: 20px;
+            color: #E0E0E0;
+            margin-bottom: var(--spacing-lg);
+            max-width: 600px;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero .container {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--spacing-xl);
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-lead {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            /* Center stats on mobile */
+            .hero-stats {
+                justify-content: center;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="../assets/images/logo.png" alt="InnovaREV Logo" loading="lazy">
+                <span class="logo-text">InnovaREV</span>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link text-accent">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services/index.html" class="nav-link">Services</a>
+                <a href="portfolio/index.html" class="nav-link">Portfolio</a>
+                <a href="blog/index.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="btn btn-sm btn-primary">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+
+                <h1 style="font-size: 56px; line-height: 1.1; margin-bottom: 24px;">Transform Your Business<br>With
+                    Cutting-Edge <span style="color: var(--color-accent);">Technology</span></h1>
+                <p class="hero-lead" style="font-size: 22px; max-width: 650px;">We don't just build websites and apps—we
+                    create digital experiences that drive growth, engagement, and measurable results for your business.
+                </p>
+                <div class="hero-actions" style="margin-top: 32px;">
+                    <a href="contact.html" class="btn btn-lg btn-primary"
+                        style="padding: 16px 40px; font-size: 18px;">Start Your Project →</a>
+                    <a href="#services" class="btn btn-lg btn-secondary"
+                        style="border-color: white; color: white; padding: 16px 40px; font-size: 18px;">View Our
+                        Work</a>
+                </div>
+
+                <div class="hero-stats"
+                    style="margin-top: 40px; display: flex; gap: 32px; align-items: center; color: rgba(255,255,255,0.9); font-size: 14px;">
+                    <div><strong style="font-size: 24px; color: var(--color-accent); display: block;">98%</strong>Client
+                        Satisfaction</div>
+                    <div><strong
+                            style="font-size: 24px; color: var(--color-accent); display: block;">150+</strong>Projects
+                        Delivered</div>
+                    <div><strong
+                            style="font-size: 24px; color: var(--color-accent); display: block;">24/7</strong>Support
+                        Available</div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center animate-on-scroll" style="margin-bottom: var(--spacing-xl);">
+                <h2 class="text-primary">Our Services</h2>
+                <p class="text-medium">Comprehensive digital solutions for your business</p>
+            </div>
+
+            <div class="grid grid-3">
+                
+                <div class="card service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-globe"
+                            style="font-size: 48px; color: var(--color-primary);"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built to attract customers and grow your business online.</p>
+                    <a href="services/web-development.html" class="text-accent"
+                        style="margin-top: auto; font-weight: 600;">Learn More →</a>
+                </div>
+
+                <div class="card service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-shopping-cart"
+                            style="font-size: 48px; color: var(--color-primary);"></i></div>
+                    <h3>E-Commerce</h3>
+                    <p>Online stores that make selling easy—for you and your customers.</p>
+                    <a href="services/ecommerce.html" class="text-accent"
+                        style="margin-top: auto; font-weight: 600;">Learn More →</a>
+                </div>
+
+                <div class="card service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-laptop"
+                            style="font-size: 48px; color: var(--color-primary);"></i></div>
+                    <h3>Desktop Software</h3>
+                    <p>Custom desktop applications to automate and enhance your business operations.</p>
+                    <a href="services/desktop-software.html" class="text-accent"
+                        style="margin-top: auto; font-weight: 600;">Learn More →</a>
+                </div>
+
+                <div class="card service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"
+                            style="font-size: 48px; color: var(--color-primary);"></i></div>
+                    <h3>Android Apps</h3>
+                    <p>Mobile apps that connect you with your customers anytime, anywhere.</p>
+                    <a href="services/android-apps.html" class="text-accent"
+                        style="margin-top: auto; font-weight: 600;">Learn More →</a>
+                </div>
+
+                <div class="card service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-sync-alt"
+                            style="font-size: 48px; color: var(--color-primary);"></i></div>
+                    <h3>Website Migration</h3>
+                    <p>Seamless migration from your old platform to a modern, faster, more secure solution.</p>
+                    <a href="services/website-migration.html" class="text-accent"
+                        style="margin-top: auto; font-weight: 600;">Learn More →</a>
+                </div>
+
+                <div class="card service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-cog"
+                            style="font-size: 48px; color: var(--color-primary);"></i></div>
+                    <h3>Coding Services</h3>
+                    <p>Expert help for your coding challenges—bugs, code reviews, and technical consulting.</p>
+                    <a href="services/coding-services.html" class="text-accent"
+                        style="margin-top: auto; font-weight: 600;">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="flex justify-between items-center animate-on-scroll" style="margin-bottom: var(--spacing-xl);">
+                <div class="text-left">
+                    <h2>Recent Work</h2>
+                    <p class="text-medium">See how we help businesses transform</p>
+                </div>
+                <a href="portfolio/index.html" class="btn btn-secondary">View All Projects</a>
+            </div>
+
+            <div class="grid grid-3">
+                
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="../assets/images/portfolio/kusina.png" alt="Organic Health Foods"
+                        style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
+                    <div style="padding: var(--spacing-md);">
+                        <span class="tag">Food & Drink</span>
+                        <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Organic Health Foods</h3>
+                        <p class="text-medium" style="font-size: 14px;">Restaurant website featuring healthy, organic,
+                            and natural food options.</p>
+                        <a href="../resto_templates/buss_3/index.html" target="_blank" class="text-primary"
+                            style="font-weight: 600;">View Live Demo →</a>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="../assets/images/portfolio/developer-portfolio.png" alt="Full Stack Developer"
+                        style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
+                    <div style="padding: var(--spacing-md);">
+                        <span class="tag">Portfolio</span>
+                        <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">Full Stack Developer</h3>
+                        <p class="text-medium" style="font-size: 14px;">Clean, code-focused portfolio for software
+                            developers with GitHub integration.</p>
+                        <a href="../portfolio_templates/perso_3/index.html" target="_blank" class="text-primary"
+                            style="font-weight: 600;">View Live Demo →</a>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="../assets/images/portfolio/96611a9f-4272-4922-b5d6-5cc7e524af50.jpg" alt="iGasto"
+                        style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
+                    <div style="padding: var(--spacing-md);">
+                        <span class="tag">Web App</span>
+                        <h3 style="font-size: 20px; margin-top: var(--spacing-sm);">iGasto</h3>
+                        <p class="text-medium" style="font-size: 14px;">Modern expense tracking application with
+                            intuitive interface and real-time analytics.</p>
+                        <a href="https://igasto.vercel.app/" target="_blank" class="text-primary"
+                            style="font-weight: 600;">View Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--color-background);">
+        <div class="container">
+            <div class="text-center animate-on-scroll" style="margin-bottom: var(--spacing-xl);">
+                <h2>Why Choose InnovaREV?</h2>
+                <p class="text-medium" style="max-width: 600px; margin: var(--spacing-sm) auto 0;">We combine technical
+                    expertise with business understanding to deliver solutions that drive real results.</p>
+            </div>
+
+            <div class="grid grid-3">
+                
+                <div class="card text-center animate-on-scroll">
+                    <div style="margin-bottom: var(--spacing-md);"><i class="fas fa-bolt"
+                            style="font-size: 48px; color: var(--color-accent);"></i></div>
+                    <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Fast Delivery</h3>
+                    <p class="text-medium">We work in agile sprints to deliver working solutions quickly, keeping you in
+                        the loop every step of the way.</p>
+                </div>
+
+                <div class="card text-center animate-on-scroll">
+                    <div style="margin-bottom: var(--spacing-md);"><i class="fas fa-gem"
+                            style="font-size: 48px; color: var(--color-accent);"></i></div>
+                    <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Premium Quality</h3>
+                    <p class="text-medium">Every line of code is crafted with precision. We don't cut corners—we build
+                        solutions that last.</p>
+                </div>
+
+                <div class="card text-center animate-on-scroll">
+                    <div style="margin-bottom: var(--spacing-md);"><i class="fas fa-handshake"
+                            style="font-size: 48px; color: var(--color-accent);"></i></div>
+                    <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Dedicated Support</h3>
+                    <p class="text-medium">Your success is our priority. We provide ongoing support and maintenance to
+                        ensure everything runs smoothly.</p>
+                </div>
+
+                <div class="card text-center animate-on-scroll">
+                    <div style="margin-bottom: var(--spacing-md);"><i class="fas fa-dollar-sign"
+                            style="font-size: 48px; color: var(--color-accent);"></i></div>
+                    <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Transparent Pricing</h3>
+                    <p class="text-medium">No hidden fees or surprise charges. You'll know exactly what you're paying
+                        for from day one.</p>
+                </div>
+
+                <div class="card text-center animate-on-scroll">
+                    <div style="margin-bottom: var(--spacing-md);"><i class="fas fa-chart-line"
+                            style="font-size: 48px; color: var(--color-accent);"></i></div>
+                    <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Results-Driven</h3>
+                    <p class="text-medium">We focus on metrics that matter—conversions, engagement, and ROI. Your growth
+                        is our measure of success.</p>
+                </div>
+
+                <div class="card text-center animate-on-scroll">
+                    <div style="margin-bottom: var(--spacing-md);"><i class="fas fa-lock"
+                            style="font-size: 48px; color: var(--color-accent);"></i></div>
+                    <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Secure & Scalable</h3>
+                    <p class="text-medium">Built with security best practices and designed to scale as your business
+                        grows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center animate-on-scroll" style="margin-bottom: var(--spacing-xl);">
+                <h2>Our Process</h2>
+                <p class="text-medium" style="max-width: 600px; margin: var(--spacing-sm) auto 0;">A proven methodology
+                    that ensures your project is delivered on time, on budget, and exceeds expectations.</p>
+            </div>
+
+            <div class="grid grid-2" style="gap: var(--spacing-xl);">
+                
+                <div class="card animate-on-scroll" style="display: flex; gap: var(--spacing-md);">
+                    <div
+                        style="flex-shrink: 0; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">
+                        1</div>
+                    <div>
+                        <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Discovery & Planning</h3>
+                        <p class="text-medium">We start by understanding your business goals, target audience, and
+                            technical requirements. This phase includes stakeholder interviews, competitive analysis,
+                            and detailed project planning.</p>
+                    </div>
+                </div>
+
+                <div class="card animate-on-scroll" style="display: flex; gap: var(--spacing-md);">
+                    <div
+                        style="flex-shrink: 0; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">
+                        2</div>
+                    <div>
+                        <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Design & Prototyping</h3>
+                        <p class="text-medium">Our designers create wireframes and high-fidelity mockups that bring your
+                            vision to life. You'll see exactly what your product will look like before we write a single
+                            line of code.</p>
+                    </div>
+                </div>
+
+                <div class="card animate-on-scroll" style="display: flex; gap: var(--spacing-md);">
+                    <div
+                        style="flex-shrink: 0; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">
+                        3</div>
+                    <div>
+                        <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Development & Testing</h3>
+                        <p class="text-medium">We build your solution using modern technologies and best practices.
+                            Rigorous testing ensures everything works flawlessly across all devices and browsers.</p>
+                    </div>
+                </div>
+
+                <div class="card animate-on-scroll" style="display: flex; gap: var(--spacing-md);">
+                    <div
+                        style="flex-shrink: 0; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;">
+                        4</div>
+                    <div>
+                        <h3 style="font-size: 20px; margin-bottom: var(--spacing-sm);">Launch & Support</h3>
+                        <p class="text-medium">We handle the deployment and ensure a smooth launch. Post-launch, we
+                            provide ongoing support, monitoring, and optimization to keep your solution performing at
+                            its best.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <section class="section-padding bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="text-white">Ready to Revolutionize Your Business?</h2>
+            <p style="color: #E0E0E0; max-width: 600px; margin: 0 auto var(--spacing-lg) auto;">
+                Let's discuss how InnovaREV can help you achieve your digital goals.
+            </p>
+            <a href="contact.html" class="btn btn-lg btn-primary">Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo"
+                        style="display: inline-block; margin-bottom: var(--spacing-sm); filter: brightness(0) invert(1);">
+                        <img src="../assets/images/logo.png" alt="InnovaREV Logo" loading="lazy">
+                        <span class="logo-text" style="color: white;">InnovaREV</span>
+                    </a>
+                    <p style="color: #ccc; font-size: 14px; max-width: 300px;">
+                        We build technology that helps businesses grow. Your partner in digital transformation.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/web-development.html">Web Development</a></li>
+                        <li><a href="services/ecommerce.html">E-Commerce</a></li>
+                        <li><a href="services/android-apps.html">Mobile Apps</a></li>
+                        <li><a href="services/coding-services.html">Coding Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio/index.html">Portfolio</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:innovateandrevolution@gmail.com">innovateandrevolution@gmail.com</a></li>
+                        <li><a href="tel:09948769852">09948769852</a></li>
+                        <li>
+                            <div style="display: flex; gap: 15px; margin-top: var(--spacing-md);">
+                                <a href="https://web.facebook.com/profile.php?id=61585774570012" target="_blank"
+                                    style="color: white; font-size: 20px; transition: color 0.3s;" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/innovarev-tbi-96954b391" target="_blank"
+                                    style="color: white; font-size: 20px; transition: color 0.3s;" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.instagram.com/innovadotrev/" target="_blank"
+                                    style="color: white; font-size: 20px; transition: color 0.3s;" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2026 InnovaREV. All rights reserved. | Privacy Policy | 
+                    Terms of Service
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/interactions.js"></script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "InnovaREV",
+      "image": "https://www.innovarev.com/assets/images/logo.png",
+      "description": "InnovaREV provides top-tier web development, e-commerce, and software solutions for businesses.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Tech Avenue",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94105",
+        "addressCountry": "US"
+      },
+      "url": "https://www.innovarev.com",
+      "telephone": "+09619476675",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "priceRange": "$$$"
+    }
+    </script>
+
+    <script src="assets/js/analytics.js" defer></script>
+</body>
+
+</html>
