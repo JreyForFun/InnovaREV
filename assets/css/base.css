@@ -1,0 +1,121 @@
+/* Base Styles */
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  color: var(--color-text-dark);
+  background-color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  color: var(--color-primary);
+  line-height: var(--line-height-heading);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+p {
+  line-height: var(--line-height-p);
+  color: var(--color-text-dark);
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-medium {
+  color: var(--color-text-medium);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-light {
+  background-color: var(--color-bg-light);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.section-padding {
+  padding: var(--spacing-2xl) 0;
+}
+
+/* Mobile Typography Overrides */
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-h1-mobile);
+  }
+
+  h2 {
+    font-size: var(--font-size-h2-mobile);
+  }
+
+  h3 {
+    font-size: var(--font-size-h3-mobile);
+  }
+}
+
+/* Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for grids */
+.grid>.animate-on-scroll:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.grid>.animate-on-scroll:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.grid>.animate-on-scroll:nth-child(4) {
+  transition-delay: 0.3s;
+}

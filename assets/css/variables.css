@@ -1,0 +1,66 @@
+/* 
+* InnovaREV Design System - Variables 
+* Based on PRD Version 1.0
+*/
+
+:root {
+    /* Colors */
+    --color-primary: #001F3F; /* Dark Navy */
+    --color-accent: #D4AF37; /* Gold */
+    --color-white: #FFFFFF;
+    
+    --color-bg-light: #F5F5F5; /* Card Backgrounds */
+    --color-text-dark: #333333; /* Primary Text */
+    --color-text-medium: #757575; /* Secondary Text */
+    --color-text-light: #999999; /* Placeholders */
+    
+    --color-success: #4CAF50;
+    --color-error: #F44336;
+    --color-info: #2196F3;
+    
+    /* Typography */
+    --font-family-heading: 'Inter', sans-serif;
+    --font-family-body: 'Inter', sans-serif;
+    --font-family-code: 'Courier New', monospace;
+    
+    /* Font Sizes */
+    --font-size-h1: 48px;
+    --font-size-h2: 36px;
+    --font-size-h3: 28px;
+    --font-size-body: 16px;
+    --font-size-small: 14px;
+    --font-size-caption: 12px;
+    
+    /* Mobile Font Sizes */
+    --font-size-h1-mobile: 32px;
+    --font-size-h2-mobile: 24px;
+    --font-size-h3-mobile: 20px;
+    
+    /* Line Heights */
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+    --line-height-p: 1.8;
+    
+    /* Spacing Scale (Base: 8px) */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    --spacing-2xl: 64px;
+    
+    /* Layout */
+    --container-width: 1200px;
+    --header-height: 80px;
+    
+    /* Shadows & Radius */
+    --border-radius-sm: 6px;
+    --border-radius-md: 8px;
+    
+    --shadow-card: 0 2px 8px rgba(0,0,0,0.1);
+    --shadow-hover: 0 8px 16px rgba(0,0,0,0.15);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}

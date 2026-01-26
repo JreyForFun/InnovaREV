@@ -1,0 +1,43 @@
+/* Responsive Styles */
+
+/* Tablet & Mobile Adjustments */
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .nav-links {
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  .nav-link {
+    display: block;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .hero {
+    min-height: 70vh !important;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .btn-lg {
+    width: 100%;
+    margin-bottom: var(--spacing-xs);
+  }
+}

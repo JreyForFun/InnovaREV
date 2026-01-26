@@ -1,0 +1,125 @@
+/* Pages CSS - Service & Portfolio Specifics */
+
+/* Service Page Header */
+.service-header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.service-intro {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl) 0;
+}
+
+/* Features List */
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-item {
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  background-color: var(--color-bg-light);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+}
+
+.feature-item::before {
+  content: '✓';
+  color: var(--color-success);
+  font-weight: bold;
+  margin-right: var(--spacing-md);
+}
+
+/* Process Timeline */
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.process-step {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  padding: var(--spacing-md);
+  position: relative;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto var(--spacing-sm) auto;
+}
+
+/* Portfolio Grid */
+.portfolio-filter {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  padding: var(--spacing-md) 0;
+  color: var(--color-text-medium);
+  font-size: var(--font-size-small);
+}
+
+.breadcrumbs a {
+  color: var(--color-primary);
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* Comparison Table */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-lg);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: var(--color-bg-light);
+  font-weight: 600;
+}
