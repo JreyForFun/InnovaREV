@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alex@portfolio:~$</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+    <div class="terminal-body">
+
+      <!-- Hero -->
+      <div class="command-line">
+        <span class="prompt">alex@portfolio:~$</span>
+        <span class="command">./init.sh --profile="Backend Eng"</span>
+      </div>
+      <div class="output typing-output">
+        <h1>Initializing Alex Dragneel...</h1>
+        <p>Status: <span style="color: #2ea043;">ONLINE</span></p>
+        <p>Role: Senior Backend Engineer</p>
+        <p>Location: Manila, PH</p>
+      </div>
+
+      <!-- About -->
+      <div class="command-line">
+        <span class="prompt">alex@portfolio:~$</span>
+        <span class="command">cat about.txt</span>
+      </div>
+      <div class="output">
+        <p>I build scalable systems, optimize databases, and fix bugs that don't exist yet.</p>
+        <p>Obsessed with clean code, microservices, and 99.99% uptime.</p>
+      </div>
+
+      <!-- Skills -->
+      <div class="command-line">
+        <span class="prompt">alex@portfolio:~$</span>
+        <span class="command">ls -la ./skills</span>
+      </div>
+      <div class="output">
+        <div class="skill">
+          <span>Node.js</span>
+          <span class="progress-bar">[####################] 100%</span>
+        </div>
+        <div class="skill">
+          <span>Python</span>
+          <span class="progress-bar">[##################..] 90%</span>
+        </div>
+        <div class="skill">
+          <span>PostgreSQL</span>
+          <span class="progress-bar">[#################...] 85%</span>
+        </div>
+        <div class="skill">
+          <span>Docker/K8s</span>
+          <span class="progress-bar">[###############.....] 75%</span>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="command-line">
+        <span class="prompt">alex@portfolio:~$</span>
+        <span class="command">cat projects.json</span>
+      </div>
+      <div class="output">
+
+        <div class="code-block">
+          {<br>
+          &nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"SafeVault API"</span>,<br>
+          &nbsp;&nbsp;<span class="key">"tech"</span>: [<span class="string">"Go"</span>, <span
+            class="string">"gRPC"</span>],<br>
+          &nbsp;&nbsp;<span class="key">"desc"</span>: <span class="string">"Zero-knowledge encryption
+            service."</span>,<br>
+          &nbsp;&nbsp;<span class="key">"status"</span>: <span class="string">"Production"</span><br>
+          }
+        </div>
+
+        <div class="code-block">
+          {<br>
+          &nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"TrafficScale"</span>,<br>
+          &nbsp;&nbsp;<span class="key">"tech"</span>: [<span class="string">"Node.js"</span>, <span
+            class="string">"Redis"</span>],<br>
+          &nbsp;&nbsp;<span class="key">"desc"</span>: <span class="string">"Load balancer for high-traffic
+            endpoints."</span>,<br>
+          &nbsp;&nbsp;<span class="key">"users"</span>: <span class="number">50000</span><br>
+          }
+        </div>
+
+        <div class="code-block">
+          {<br>
+          &nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"AutoDeploy"</span>,<br>
+          &nbsp;&nbsp;<span class="key">"tech"</span>: [<span class="string">"Bash"</span>, <span
+            class="string">"AWS"</span>],<br>
+          &nbsp;&nbsp;<span class="key">"desc"</span>: <span class="string">"CI/CD pipeline generator."</span><br>
+          }
+        </div>
+
+      </div>
+
+      <!-- Contact -->
+      <div class="command-line">
+        <span class="prompt">alex@portfolio:~$</span>
+        <span class="command">./contact_me.sh</span>
+      </div>
+      <div class="output">
+        <p>Email: <a href="mailto:contact@alexdragneel.com">contact@alexdragneel.com</a></p>
+        <p>GitHub: <a href="#">@alexdragneel</a></p>
+        <p><span class="cursor"></span></p>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+:root {
+  --bg-color: #f9f7f2;
+  --text-color: #333333;
+  --accent-color: #800000;
+  --secondary-color: #1a1a1a;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+  --paper-texture: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZjlmN2YyIi8+CjxwYXRoIGQ9Ik0wIDBoNHYySDB6IiBmaWxsPSIjZjVmM2VlIi8+Cjwvc3ZnPg==');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: var(--paper-texture);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  border-bottom: 5px solid var(--secondary-color);
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+a:hover {
+  border-bottom-color: var(--accent-color);
+}
+
+/* Layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+/* Header */
+header {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.subhead {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Article List */
+.article-item {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-family: sans-serif;
+}
+
+.excerpt {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Drop Cap */
+.intro::first-letter {
+  font-size: 4.5rem;
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+  color: var(--accent-color);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+/* About Section */
+.about {
+  background: #fff;
+  padding: 3rem;
+  border: 1px solid #eee;
+  margin: 6rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 6rem;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #ddd;
+  padding-top: 2rem;
+}
