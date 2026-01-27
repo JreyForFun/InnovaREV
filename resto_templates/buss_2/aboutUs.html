@@ -1,0 +1,816 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Perfect - Premium Pet Care</title>
+    <link rel="icon" href="./sources/img/Pet_Store_Favicon.png">
+    <!-- font link -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/output.css">
+
+</head>
+
+<body>
+    <header class="relative w-full z-20">
+        <div class="top-bar bg-coffee py-[10px] text-white">
+            <div class="container">
+                <div class="flex justify-between items-center gap-2">
+                    <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-[10px]">
+                            <img src="images/PawWhiteIcon.svg" alt="Paw White Icon" class="w-[18px] h-[18px]">
+                            <span class="text-14 text-white">Limited Time! Enjoy a flat 30% discount on your first
+                                purchase.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[10px] xmd:gap-[20px] xl:gap-[30px]">
+                        <a href="tel:+15559876543" class="flex items-center gap-[10px] flex-none">+1 (555) 987-6543</a>
+                        <a href="mailto:care@pawperfect.com" class="flex items-center gap-[10px] flex-none">care@pawperfect.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-wrapper static transition-all duration-300 ease-in-out bg-white shadow-custom py-5">
+            <div class="container">
+                <div class="flex items-center justify-between gap-4">
+                    <a href="index.html" class="logo max-w-[171px] " alt="Paw Perfect Store">
+                        <img src="images/logo.svg" alt="logo">
+                    </a>
+
+                    <nav class="xlg:static fixed top-0 xlg:p-0 py-8 px-3 xlg:block flex flex-col gap-7 xlg:bg-transparent bg-white xlg:shadow-none shadow-custom xlg:h-auto h-screen xlg:w-auto w-[320px]">
+                        <div class="mobile-logo xlg:hidden block pb-7 border-b border-orange">
+                            <a href="index.html" class="logo w-[171px] block" alt="Paw Perfect Store">
+                                <img src="images/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="flex xlg:flex-row flex-col items-start xlg:items-center gap-[30px] xlg:gap-[30px] xxl:gap-[40px]">
+                            <li><a class="text-16 text-black" href="index.html">Home</a></li>
+                            <li><a class="text-16 text-black" href="aboutUs.html">About</a></li>
+                            <li><a class="text-16 text-black" href="shop.html">Shop</a></li>
+                            <li><a class="text-16 text-black" href="services.html">Services</a></li>
+                            <li><a class="text-16 text-black" href="blog.html">Blog</a></li>
+                            <li><a class="text-16 text-black" href="contactUs.html">Contact</a></li>
+                        </ul>
+                        <div class="w-[34px] absolute top-5 right-5 h-[34px] rounded-full bg-coffee flex items-center justify-center xlg:hidden close">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.4141 9L14.707 4.70703C15.0977 4.31641 15.0977 3.68359 14.707 3.29297C14.3164 2.90234 13.6836 2.90234 13.293 3.29297L9 7.58594L4.70703 3.29297C4.31641 2.90234 3.68359 2.90234 3.29297 3.29297C2.90234 3.68359 2.90234 4.31641 3.29297 4.70703L7.58594 9L3.29297 13.293C2.90234 13.6836 2.90234 14.3164 3.29297 14.707C3.48828 14.9023 3.74414 15 4 15C4.25586 15 4.51172 14.9023 4.70703 14.707L9 10.4141L13.293 14.707C13.4883 14.9023 13.7441 15 14 15C14.2559 15 14.5117 14.9023 14.707 14.707C15.0977 14.3164 15.0977 13.6836 14.707 13.293L10.4141 9Z" fill="white"></path>
+                            </svg>
+                        </div>
+                    </nav>
+
+                    <div class="flex items-center gap-2 sm:gap-3 xmd:gap-5 social-icon">
+                        <div class="flex items-center gap-2 sm:gap-3 xmd:gap-5">
+                            <!-- <a href="javascript:void(0)"
+                                class="w-[24px] 3xsm:w-[34px] h-[24px] 3xsm:p-0 3xsm:h-[34px] rounded-full bg-coffee flex items-center justify-center">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5218_7017)">
+                                        <path
+                                            d="M7.24444 14.4823C8.85329 14.4823 10.4162 13.9455 11.6854 12.9569L16.474 17.7455C16.8317 18.0909 17.4017 18.081 17.7472 17.7233C18.0842 17.3744 18.0842 16.8212 17.7472 16.4722L12.9586 11.6837C15.4118 8.52577 14.8406 3.97709 11.6827 1.52391C8.52475 -0.929268 3.97612 -0.358007 1.52294 2.7999C-0.930245 5.9578 -0.358984 10.5065 2.79892 12.9597C4.07027 13.9473 5.63453 14.4831 7.24444 14.4823ZM3.39686 3.39507C5.52184 1.27005 8.96711 1.27001 11.0921 3.39499C13.2171 5.51997 13.2172 8.96524 11.0922 11.0903C8.96723 13.2153 5.52196 13.2153 3.39694 11.0903L3.39686 11.0903C1.27188 8.98076 1.25936 5.54805 3.36886 3.42307L3.39686 3.39507Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5218_7017">
+                                            <rect width="18" height="18" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </a> -->
+                            <div class="wishlist-icon relative">
+                                <a href="wishlist.html" class="w-[24px] 3xsm:w-[34px] h-[24px] 3xsm:p-0 3xsm:h-[34px] rounded-full bg-coffee flex items-center justify-center">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5218_7021)">
+                                            <path d="M9.00003 17.1817C8.78705 17.1817 8.58247 17.0987 8.42976 16.9502L1.53822 10.2558C1.04402 9.77295 0.650478 9.19688 0.380348 8.56093C0.110218 7.92498 -0.0311367 7.24179 -0.0355385 6.55086C-0.0399402 5.85993 0.0926979 5.17499 0.354703 4.53565C0.616709 3.89631 1.00288 3.31527 1.49088 2.82613C1.97888 2.337 2.55903 1.94947 3.19775 1.68598C3.83648 1.42249 4.52111 1.28826 5.21205 1.29106C5.90298 1.29385 6.58651 1.43362 7.22308 1.70227C7.85965 1.97092 8.43664 2.36313 8.92067 2.8562L8.99922 2.93392L9.07776 2.85538C10.0614 1.89223 11.3854 1.35607 12.762 1.36337C14.1387 1.37066 15.4569 1.9208 16.4303 2.89432C17.4037 3.86783 17.9537 5.18608 17.9608 6.56274C17.968 7.9394 17.4317 9.26328 16.4684 10.2468L9.56949 16.9502C9.41698 17.0985 9.21273 17.1815 9.00003 17.1817ZM5.22658 2.96338C4.51661 2.96301 3.82249 3.17325 3.23204 3.56749C2.64159 3.96172 2.18136 4.52225 1.90956 5.17813C1.63777 5.83401 1.56663 6.55577 1.70515 7.2521C1.84368 7.94842 2.18564 8.588 2.68776 9.08992L9.00003 15.223L15.3205 9.08174C15.9777 8.40439 16.3418 7.49547 16.334 6.55169C16.3261 5.60791 15.9469 4.70518 15.2785 4.03888C14.61 3.37258 13.7061 2.9963 12.7623 2.99148C11.8185 2.98665 10.9107 3.35367 10.2355 4.0131L9.57849 4.6701C9.42495 4.82329 9.21692 4.90932 9.00003 4.90932C8.78315 4.90932 8.57512 4.82329 8.42158 4.6701L7.76458 4.0131C7.43148 3.67966 7.0358 3.41528 6.60026 3.23514C6.16473 3.055 5.6979 2.96264 5.22658 2.96338Z" fill="white"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5218_7021">
+                                                <rect width="18" height="18" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <div class="w-5 h-5 rounded-full flex items-center justify-center bg-orange text-coffee text-12 absolute -top-[6px] -right-1">
+                                    10</div>
+                            </div>
+                            <div class="cart-icon relative">
+                                <a href="javascript:void(0)" class="w-[24px] cart-icon 3xsm:w-[34px] h-[24px] 3xsm:p-0 3xsm:h-[34px] rounded-full bg-coffee flex items-center justify-center">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_5218_7025)">
+                                            <path d="M7.11784 17.347C6.12953 17.347 5.32543 16.5429 5.32543 15.5546C5.32543 14.5663 6.12953 13.7624 7.11784 13.7624C8.10615 13.7624 8.91025 14.5663 8.91025 15.5546C8.91025 16.5429 8.10615 17.347 7.11784 17.347ZM7.11784 14.8874C6.94093 14.8876 6.7713 14.9579 6.64618 15.083C6.52105 15.2081 6.45066 15.3777 6.45043 15.5546C6.45043 15.9227 6.74968 16.222 7.11784 16.222C7.486 16.222 7.78525 15.9227 7.78525 15.5546C7.78502 15.3777 7.71463 15.2081 7.5895 15.083C7.46438 14.9579 7.29475 14.8876 7.11784 14.8874ZM13.3487 17.347C12.3603 17.347 11.5565 16.5429 11.5565 15.5546C11.5565 14.5663 12.3603 13.7624 13.3487 13.7624C14.337 13.7624 15.1411 14.5663 15.1411 15.5546C15.1411 16.5429 14.3367 17.347 13.3487 17.347ZM13.3487 14.8874C13.1718 14.8877 13.0022 14.958 12.8772 15.0831C12.7521 15.2081 12.6818 15.3777 12.6815 15.5546C12.6817 15.7315 12.752 15.9011 12.8771 16.0262C13.0021 16.1514 13.1717 16.2217 13.3487 16.222C13.5256 16.2218 13.6953 16.1515 13.8204 16.0263C13.9455 15.9012 14.0159 15.7315 14.0161 15.5546C14.0158 15.3777 13.9454 15.2081 13.8203 15.083C13.6952 14.9579 13.5256 14.8876 13.3487 14.8874ZM14.661 12.3731H5.82437C5.40907 12.3747 5.00566 12.2345 4.6809 11.9757C4.35613 11.7168 4.12947 11.3549 4.03843 10.9497L2.2044 2.9405C2.19225 2.88798 2.16831 2.83891 2.1344 2.79701C2.10048 2.75511 2.05748 2.72146 2.00865 2.69863L0.48737 1.99353C0.321181 1.91329 0.193201 1.77093 0.131045 1.59716C0.0688898 1.4234 0.0775423 1.23216 0.155136 1.06472C0.232729 0.897278 0.373042 0.767055 0.545799 0.702149C0.718556 0.637243 0.909905 0.642858 1.07856 0.717784L2.59984 1.42288C2.84305 1.53643 3.05726 1.70381 3.22624 1.91236C3.39522 2.12091 3.51455 2.36516 3.57521 2.62663L5.40925 10.6363C5.4304 10.7305 5.48308 10.8147 5.55858 10.8748C5.63407 10.935 5.72784 10.9675 5.82437 10.9671H14.661C14.7572 10.9674 14.8508 10.935 14.9262 10.8751C15.0016 10.8153 15.0545 10.7316 15.0761 10.6378L16.502 4.50285C16.5171 4.44047 16.5177 4.37546 16.5036 4.31284C16.4896 4.25022 16.4613 4.19168 16.421 4.14172C16.3815 4.09114 16.3308 4.05033 16.273 4.02244C16.2151 3.99454 16.1517 3.98031 16.0875 3.98085H5.68121C5.49473 3.98085 5.31589 3.90677 5.18403 3.77491C5.05217 3.64304 4.97809 3.4642 4.97809 3.27772C4.97809 3.09124 5.05217 2.9124 5.18403 2.78054C5.31589 2.64868 5.49473 2.5746 5.68121 2.5746H16.0875C16.6497 2.5746 17.1722 2.82688 17.5221 3.26703C17.872 3.70719 17.9991 4.27363 17.872 4.82122L16.4458 10.9564C16.3531 11.36 16.126 11.7201 15.8016 11.9775C15.4773 12.235 15.0751 12.3744 14.661 12.3731Z" fill="white"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5218_7025">
+                                                <rect width="18" height="18" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <div class="w-5 h-5 rounded-full flex items-center justify-center bg-orange text-coffee text-12 absolute -top-[6px] -right-1">
+                                        2</div>
+                                </a>
+                            </div>
+                            <a href="javascript:void(0)" class="w-[24px] 3xsm:w-[34px] h-[24px] 3xsm:p-0 3xsm:h-[34px] rounded-full bg-coffee flex items-center justify-center">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.7136 8.34627C12.8654 7.50628 13.6154 6.14686 13.6154 4.61538C13.6154 2.07046 11.5449 0 9.00001 0C6.45509 0 4.38463 2.07046 4.38463 4.61538C4.38463 6.14686 5.13462 7.50628 6.28641 8.34627C3.42328 9.44191 1.38464 12.2179 1.38464 15.4615C1.38464 16.8613 2.52339 18 3.9231 18H14.0769C15.4766 18 16.6154 16.8613 16.6154 15.4615C16.6154 12.2179 14.5767 9.44191 11.7136 8.34627ZM5.76926 4.61538C5.76926 2.83395 7.21858 1.38463 9.00001 1.38463C10.7815 1.38463 12.2308 2.83395 12.2308 4.61538C12.2308 6.39682 10.7815 7.84617 9.00001 7.84617C7.21858 7.84617 5.76926 6.39682 5.76926 4.61538ZM14.0769 16.6154H3.9231C3.28688 16.6154 2.76927 16.0978 2.76927 15.4615C2.76927 12.0258 5.56434 9.23073 9.00005 9.23073C12.4358 9.23073 15.2308 12.0258 15.2308 15.4615C15.2308 16.0978 14.7132 16.6154 14.0769 16.6154Z" fill="white"></path>
+                                </svg>
+
+                            </a>
+                        </div>
+                        <div class="w-[24px] 3xsm:w-[34px] h-[24px] 3xsm:p-0 3xsm:h-[34px] rounded-full bg-coffee flex items-center justify-center xlg:hidden menu-open">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.90005 13.4996C9.90005 13.2609 9.80523 13.032 9.63645 12.8632C9.46766 12.6944 9.23874 12.5996 9.00005 12.5996H3.60005C3.36135 12.5996 3.13243 12.6944 2.96365 12.8632C2.79487 13.032 2.70005 13.2609 2.70005 13.4996C2.70005 13.7383 2.79487 13.9672 2.96365 14.136C3.13243 14.3048 3.36135 14.3996 3.60005 14.3996H9.00005C9.23874 14.3996 9.46766 14.3048 9.63645 14.136C9.80523 13.9672 9.90005 13.7383 9.90005 13.4996ZM15.3 4.49961C15.3 4.26091 15.2052 4.032 15.0364 3.86321C14.8677 3.69443 14.6387 3.59961 14.4 3.59961H3.60005C3.36135 3.59961 3.13243 3.69443 2.96365 3.86321C2.79487 4.032 2.70005 4.26091 2.70005 4.49961C2.70005 4.7383 2.79487 4.96722 2.96365 5.13601C3.13243 5.30479 3.36135 5.39961 3.60005 5.39961H14.4C14.6387 5.39961 14.8677 5.30479 15.0364 5.13601C15.2052 4.96722 15.3 4.7383 15.3 4.49961ZM15.3 8.99961C15.3 8.76091 15.2052 8.532 15.0364 8.36321C14.8677 8.19443 14.6387 8.09961 14.4 8.09961H3.60005C3.36135 8.09961 3.13243 8.19443 2.96365 8.36321C2.79487 8.532 2.70005 8.76091 2.70005 8.99961C2.70005 9.2383 2.79487 9.46722 2.96365 9.63601C3.13243 9.80479 3.36135 9.89961 3.60005 9.89961H14.4C14.6387 9.89961 14.8677 9.80479 15.0364 9.63601C15.2052 9.46722 15.3 9.2383 15.3 8.99961Z" fill="white"></path>
+                            </svg>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="cart-slide px-5 py-8 fixed top-0 h-screen max-w-[500px] min-w-[320px] bg-white shadow-custom z-[20]">
+        <div class="w-[34px] cursor-pointer absolute top-5 right-5 h-[34px] rounded-full bg-coffee flex items-center justify-center cart-close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.4141 9L14.707 4.70703C15.0977 4.31641 15.0977 3.68359 14.707 3.29297C14.3164 2.90234 13.6836 2.90234 13.293 3.29297L9 7.58594L4.70703 3.29297C4.31641 2.90234 3.68359 2.90234 3.29297 3.29297C2.90234 3.68359 2.90234 4.31641 3.29297 4.70703L7.58594 9L3.29297 13.293C2.90234 13.6836 2.90234 14.3164 3.29297 14.707C3.48828 14.9023 3.74414 15 4 15C4.25586 15 4.51172 14.9023 4.70703 14.707L9 10.4141L13.293 14.707C13.4883 14.9023 13.7441 15 14 15C14.2559 15 14.5117 14.9023 14.707 14.707C15.0977 14.3164 15.0977 13.6836 14.707 13.293L10.4141 9Z" fill="white"></path>
+            </svg>
+        </div>
+        <div class="space-y-6 h-full">
+            <div class="title text-h6 text-coffee border-b border-gray-dark pb-4">cart</div>
+            <div class="space-y-5 py-4 h-[calc(100vh-230px)] overflow-auto custom-scroll">
+                <div class="space-y-3 border-b pb-4 border-gray-dark last:pb-0 last:border-0">
+                    <div class="flex items-center gap-4 w-full">
+                        <div class="h-[70px] w-[70px] product-item flex flex-col relative product group transition-all duration-300 ease-in-out">
+                            <div class="border-2 border-dashed rounded-[8px] relative overflow-hidden border-gray-dark-100 w-full h-auto">
+                                <img src="images/product2.png" alt="product" class="h-full w-full transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <p class="text-16 text-black !font-bold">Daily Dog Feast </p>
+                            <p class="text-14 text-coffee !font-bold">$25.99 </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 justify-between">
+                        <div class="comman-btn px-4 py-2 w-fit !gap-6 !shadow-none !bg-none border border-coffee">
+                            <div class="mins cursor-pointer w-[15px] h-[15px] flex items-center justify-center">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L14.75 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+
+                            <div class="value text-20 text-coffee !font-bold px-5 relative after:absolute after:content-[''] after:w-[1px] after:h-full after:bg-black after:top-0 after:bottom-0 after:left-0 before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-black before:top-0 before:bottom-0 before:right-0">
+                                1</div>
+                            <div class="plus cursor-pointer w-[15px] h-[15px] flex items-center justify-center">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7.875L14.75 7.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.875 1L7.875 14.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="w-[30px] h-[30px] rounded-full bg-coffee flex items-center justify-center">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.57054 3.89385L5.28378 15.1543C5.36215 15.6698 5.60615 16.1383 5.97233 16.4763C6.3385 16.8143 6.80306 16.9999 7.28324 17H9.99784M15.4286 3.89385L13.7162 15.1543C13.6379 15.6698 13.3938 16.1383 13.0277 16.4763C12.6615 16.8143 12.1969 16.9999 11.7168 17H9.00216M7.89622 8.21963V12.6742M11.1038 8.21963V12.6742M2 3.89385H17M11.7516 3.89385V2.32341C11.7516 1.97242 11.6235 1.6358 11.3954 1.38762C11.1673 1.13943 10.858 1 10.5354 1H8.46459C8.14203 1 7.83269 1.13943 7.6046 1.38762C7.37652 1.6358 7.24838 1.97242 7.24838 2.32341V3.89385H11.7516Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-3 border-b pb-4 border-gray-dark last:pb-0 last:border-0">
+                    <div class="flex items-center gap-4 w-full">
+                        <div class="h-[70px] w-[70px] product-item flex flex-col relative product group transition-all duration-300 ease-in-out">
+                            <div class="border-2 border-dashed rounded-[8px] relative overflow-hidden border-gray-dark-100 w-full h-auto">
+                                <img src="images/product2.png" alt="product" class="h-full w-full transition-all duration-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <p class="text-16 text-black !font-bold">Daily Dog Feast </p>
+                            <p class="text-14 text-coffee !font-bold">$25.99 </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 justify-between">
+                        <div class="comman-btn px-4 py-2 w-fit !gap-6 !shadow-none !bg-none border border-coffee">
+                            <div class="mins cursor-pointer w-[15px] h-[15px] flex items-center justify-center">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L14.75 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+
+                            <div class="value text-20 text-coffee !font-bold px-5 relative after:absolute after:content-[''] after:w-[1px] after:h-full after:bg-black after:top-0 after:bottom-0 after:left-0 before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-black before:top-0 before:bottom-0 before:right-0">
+                                1</div>
+                            <div class="plus cursor-pointer w-[15px] h-[15px] flex items-center justify-center">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7.875L14.75 7.875" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M7.875 1L7.875 14.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="w-[30px] h-[30px] rounded-full bg-coffee flex items-center justify-center">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.57054 3.89385L5.28378 15.1543C5.36215 15.6698 5.60615 16.1383 5.97233 16.4763C6.3385 16.8143 6.80306 16.9999 7.28324 17H9.99784M15.4286 3.89385L13.7162 15.1543C13.6379 15.6698 13.3938 16.1383 13.0277 16.4763C12.6615 16.8143 12.1969 16.9999 11.7168 17H9.00216M7.89622 8.21963V12.6742M11.1038 8.21963V12.6742M2 3.89385H17M11.7516 3.89385V2.32341C11.7516 1.97242 11.6235 1.6358 11.3954 1.38762C11.1673 1.13943 10.858 1 10.5354 1H8.46459C8.14203 1 7.83269 1.13943 7.6046 1.38762C7.37652 1.6358 7.24838 1.97242 7.24838 2.32341V3.89385H11.7516Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center justify-between border-t border-gray-dark pt-4">
+                    <p class="text-16 text-gray-dark">Subtotal · 3 items</p>
+                    <p class="text-16 text-gray-dark">$77.97</p>
+                </div>
+                <div class="flex items-center justify-between gap-2">
+                    <button onclick="window.location.href='./checkout.html'" class="comman-btn shadow-none px-4 w-1/2 py-2 z-10 whitespace-nowrap bg-coffee hover:bg-orange hover:text-coffee transition-all duration-300 ease-in-out text-white text-16">Check
+                        Out</button>
+                    <button onclick="window.location.href='./cart.html'" class="comman-btn shadow-none px-4 w-1/2 py-2 z-10 whitespace-nowrap bg-orange hover:bg-coffee hover:text-white transition-all duration-300 ease-in-out text-coffee text-16">View
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <main>
+        <section class="py-10 sm:py-16 bg-bottom-left relative z-10 overflow-hidden bg-no-repeat bg-cover " style="background-image: url(./sources/img/bannerpattern.png);">
+            <div class="container">
+                <div class="flex items-start xlg:flex-row flex-col xlg:gap-0 gap-4">
+                    <div class="w-full xlg:w-3/5 space-y-7">
+                        <div class="">
+                            <h1 class="text-h1 text-coffee">Quality You Can <span class="text-orange">Trust</span>
+                            </h1>
+                        </div>
+                        <p class="text-19 text-black xlg:max-w-[572px]">At premium pet supplies, we handpick food, toys,
+                            and accessories
+                            that bring health, comfort, and joy to your pets every day.</p>
+                    </div>
+                    <div class="w-full sm:w-1/2 mx-auto xlg:w-2/5 xlg:-mt-[50px]">
+                        <img src="images/aboutBg.png" alt="Woman with dog" class="xlg:ps-[60px]">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10">
+            <div class="container space-y-[30px] md:space-y-[48px]">
+                <div class="comman-title flex flex-col items-center justify-center text-center">
+                    <img src="images/titlePaw.svg" alt="title paw" class="w-[54px] h-auto">
+                    <h2 class="text-h2 text-black">What We Stand For</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 xmd:grid-cols-3 items-center gap-[30px] lg:gap-[60px] 2lg:gap-[100px]">
+                    <div class="">
+                        <img src="images/StandFor.png" alt="stand for">
+                    </div>
+                    <div class="cols-span-1 xmd:col-span-2 space-y-7">
+                        <p class="text-22 text-black !font-semibold">Our team lovingly cares for each pet, ensuring
+                            their safety,
+                            comfort, and joy during their stay with us.s</p>
+                        <ul class="grid grid-cols-1 xmd:grid-cols-2 gap-4 lg:gap-7">
+                            <li class="li-list text-19 text-gray-dark">Quality You Can Trust</li>
+                            <li class="li-list text-19 text-gray-dark">Expert Care &amp; Guidance</li>
+                            <li class="li-list text-19 text-gray-dark">Everything in One Place</li>
+                            <li class="li-list text-19 text-gray-dark">Happy Pets, Happy Owners</li>
+                            <li class="li-list text-19 text-gray-dark">Affordable &amp; Reliable</li>
+                            <li class="li-list text-19 text-gray-dark">Fast &amp; Easy Shopping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10">
+            <div class="container space-y-[30px] md:space-y-[48px]">
+                <div class="comman-title flex flex-col items-center justify-center text-center">
+                    <img src="images/titlePaw.svg" alt="title paw" class="w-[54px] h-auto">
+                    <h2 class="text-h2 text-black">We Can Keep Them Happy</h2>
+                </div>
+                <div class="grid gap-5 md:gap-7 lg:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-gray hover:bg-orange-hover transition-colors duration-200 ease-in-out rounded-[20px] p-7 space-y-5 flex flex-col">
+                        <img src="images/service7.png" alt="Grooming" class="w-[100px] h-[100px] mx-auto">
+                        <div class="space-y-2 text-center flex-1">
+                            <h3 class="text-22 text-black">Custom &amp; Nutritious Meals</h3>
+                            <p class="text-19 text-gray-dark">Carefully selected meals, supplements,
+                                and hygiene essentials to keep pets healthy, energetic, and thriving.</p>
+                        </div>
+                        <button class="comman-btn  mx-auto bg-coffee hover:bg-orange hover:text-coffee transition-all duration-300 ease-in-out text-white text-18-bold">Learn
+                            More</button>
+                    </div>
+
+                    <div class="bg-no-repeat bg-cover bg-center w-full h-full rounded-[20px] min-h-[300px]" style="background-image: url(./sources/img/Services/service10.png);">
+                    </div>
+
+                    <div class="bg-gray hover:bg-orange-hover transition-colors duration-200 ease-in-out rounded-[20px] p-7 space-y-5 flex flex-col">
+                        <img src="images/service8.png" alt="Grooming" class="w-[100px] h-[100px] mx-auto">
+                        <div class="space-y-2 text-center flex-1">
+                            <h3 class="text-22 text-black">Comfort &amp; Stylish Accessories</h3>
+                            <p class="text-19 text-gray-dark">Cozy beds, safe collars, and
+                                trendy accessories designed to make
+                                pets feel loved and cared for.</p>
+                        </div>
+                        <button class="comman-btn  mx-auto bg-coffee hover:bg-orange hover:text-coffee transition-all duration-300 ease-in-out text-white text-18-bold">Learn
+                            More</button>
+                    </div>
+
+                    <div class="bg-no-repeat bg-cover bg-center w-full h-full rounded-[20px] min-h-[300px]" style="background-image: url(./sources/img/Services/service11.png);">
+                    </div>
+
+                    <div class="bg-gray hover:bg-orange-hover transition-colors duration-200 ease-in-out rounded-[20px] p-7 space-y-5 flex flex-col">
+                        <img src="images/service9.png" alt="Grooming" class="w-[100px] h-[100px] mx-auto">
+                        <div class="space-y-2 text-center flex-1">
+                            <h3 class="text-22 text-black">Play &amp; Activity Essentials</h3>
+                            <p class="text-19 text-gray-dark">Fun toys and engaging activities
+                                that encourage exercise, mental growth,
+                                and joyful playtime.</p>
+                        </div>
+                        <button class="comman-btn  mx-auto bg-coffee hover:bg-orange hover:text-coffee transition-all duration-300 ease-in-out text-white text-18-bold">Learn
+                            More</button>
+                    </div>
+
+                    <div class="bg-no-repeat bg-cover bg-center w-full h-full rounded-[20px] min-h-[300px]" style="background-image: url(./sources/img/Services/service12.png);">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 bg-center bg-cover relative after:content-[''] after:w-full after:-z-1 z-2 after:h-full after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:bg-[#000000CC]" style="background-image: url(./sources/img/chooseUs.png);">
+            <div class="container space-y-[30px] md:space-y-[48px]">
+                <div class="comman-title flex flex-col items-center justify-center text-center">
+                    <img src="images/titlePaw.svg" alt="title paw" class="w-[54px] h-auto">
+                    <h2 class="text-h2 text-white">Why Choose Us</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="max-w-[1010px] mx-auto space-y-2 text-center">
+                        <p class="text-19 !leading-[30px] text-white">We go beyond products to provide love, care, and
+                            trusted services for every pet. From premium food to expert grooming and dedicated support,
+                            pet parents choose us because we treat every furry friend like family.</p>
+                    </div>
+                </div>
+                <div class="grid gap-5 md:gap-7 lg:gap-10 xl:gap-40 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="space-y-5 text-center">
+                        <img src="images/FastShipping.png" alt="Fast Shipping" class="w-20 h-20 mx-auto">
+                        <h3 class="text-22 text-orange">Fast Shipping</h3>
+                        <p class="text-19 text-white !font-normal">Get your pet’s favorite supplies delivered quickly,
+                            so they never
+                            have to wait.</p>
+                    </div>
+                    <div class="space-y-5 text-center">
+                        <img src="images/ExpertCare.png" alt="Fast Shipping" class="w-20 h-20 mx-auto">
+                        <h3 class="text-22 text-orange">Expert Care</h3>
+                        <p class="text-19 text-white !font-normal">Professional grooming, training,
+                            and health guidance delivered
+                            by trusted experts.</p>
+                    </div>
+                    <div class="space-y-5 text-center">
+                        <img src="images/PremiumQualityProducts.png" alt="Fast Shipping" class="w-20 h-20 mx-auto">
+                        <h3 class="text-22 text-orange">Premium Quality Products</h3>
+                        <p class="text-19 text-white !font-normal">High-quality food, toys, and accessories designed to
+                            keep pets happy and healthy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 lg:pb-20 pb-10">
+            <div class="container space-y-[30px] md:space-y-[48px]">
+                <div class="comman-title flex flex-col items-center justify-center text-center">
+                    <img src="images/titlePaw.svg" alt="title paw" class="w-[54px] h-auto">
+                    <h2 class="text-h2 text-black">Our Journey With Pets</h2>
+                </div>
+                <div class="flex items-start justify-between gap-3 flex-wrap">
+                    <div class="w-full lg:w-1/2">
+                        <div class="relative lg:w-full w-full 2xsm:w-[80%] sm:w-[70%] 2sm:w-[58%] md:w-1/2 mx-auto lg:mb-0 mb-[180px] md:mb-[200px]">
+                            <img src="images/coachingPattern.png" alt="coachingPattern" class="w-[167px] h-[167px] absolute -left-[12%] -top-[25%]">
+                            <div class="w-[181px] 4xsm:w-[200px] md:w-[230px] 2xmd:w-[260px] xxl:w-[312px] h-auto xxl:h-[340px] bg-white rounded-[20px] p-3 2xmd:p-6 shadow-coaching relative z-1">
+                                <img src="images/coaching1.png" alt="coaching" class="w-full h-full rounded-xl">
+                            </div>
+                            <div class="w-[165px] 4xsm:w-[190px] md:w-[220px] 2xmd:w-[265px] xxl:w-[299px] h-auto xxl:h-[362px] bg-white rounded-[20px] p-3 2xmd:p-6 shadow-coaching absolute top-[100px] 2xsm:top-[14%] right-0 2xsm:right-[20px] xsm:right-[65px] md:right-0 lg:right-[25px] 2lg:right-[85px] xxl:right-[9%] z-2">
+                                <img src="images/coaching2.png" alt="coaching" class="w-full h-full rounded-xl">
+                            </div>
+                            <div class="xxl:w-[248px] w-[150px] 4xsm:w-[177px] md:w-[200px] xmd:w-[220px] xxl:h-[295px] bg-white rounded-[20px] p-3 2xmd:p-6 shadow-coaching absolute top-[180px] 2xsm:top-[64%] left-[40%] 2xsm:left-[31%] -translate-x-1/2 z-3">
+                                <img src="images/coaching3.png" alt="coaching" class="w-full h-full rounded-xl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/5 space-y-5 lg:text-left text-center">
+                        <h3 class="text-h3 text-black !font-bold">Smart, Confident &amp; Well-Behaved Companions</h3>
+                        <p class="text-19 text-gray-dark">
+                            Good behavior creates a happier pet and home. Our training sessions build essential skills,
+                            better habits, and obedience in a fun.
+                        </p>
+                        <div class="grid grid-cols-1 2xsm:grid-cols-2 gap-8">
+                            <div class="space-y-1 lg:text-left text-center">
+                                <h4 class="text-60 font-extrabold text-black counter" data-target="120">
+                                    0 <span class="text-orange">+</span></h4>
+                                <p class="text-19 text-black">Clients Assisted</p>
+                            </div>
+                            <div class="space-y-1 lg:text-left text-center">
+                                <h4 class="text-60 font-extrabold text-black counter" data-target="100">
+                                    0 <span class="text-orange">%</span></h4>
+                                <p class="text-19 text-black">Pet Protection</p>
+                            </div>
+                            <div class="space-y-1 lg:text-left text-center">
+                                <h4 class="text-60 font-extrabold text-black counter" data-target="10">
+                                    0 <span class="text-orange">+</span></h4>
+                                <p class="text-19 text-black">Years of Trusted Service</p>
+                            </div>
+                            <div class="space-y-1 lg:text-left text-center">
+                                <h4 class="text-60 font-extrabold text-black counter" data-target="10">
+                                    0 <span>k</span> <span class="text-orange">+</span></h4>
+                                <p class="text-19 text-black">Products Delivered</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10">
+            <div class="container space-y-[30px] md:space-y-[48px]">
+                <div class="comman-title flex flex-col items-center justify-center text-center">
+                    <img src="images/titlePaw.svg" alt="title paw" class="w-[54px] h-auto">
+                    <h2 class="text-h2 text-black">Meet Our Team</h2>
+                </div>
+                <div class="grid gap-5 md:gap-7 lg:gap-10 xl:gap-14 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="relative bg-orange-vlight-200 p-5 flex flex-col gap-5 rounded-[20px] mt-20">
+                        <img src="images/team1.png" alt="team" class="max-w-[200px] h-auto rounded-[11px] border-8 border-white mx-auto -mt-20 space-y-5">
+                        <div class="space-y-2">
+                            <h3 class="text-22 text-black">James Anderson</h3>
+                            <p class="text-16 text-coffee !font-semibold">
+                                Dog Walker
+                            </p>
+                        </div>
+                        <div class="dec flex-1">
+                            <p class="text-19 text-gray-dark">James is a caring and reliable dog walker who ensures your
+                                furry friends get the exercise, love, and attention they deserve.. <a href="javascript:void(0)" class="!font-bold text-coffee">Read More</a></p>
+                        </div>
+                        <div class="social-link flex items-center flex-wrap gap-4">
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.0175558C14.1263 0.0175558 18.6982 -0.151984 20.6162 0.60447C21.8947 1.11325 22.8802 2.09877 23.3955 3.38377C24.1585 5.30825 23.9824 9.87369 23.9824 12C23.9824 14.1263 24.1585 18.6982 23.3955 20.6162C22.8867 21.8947 21.9012 22.8802 20.6162 23.3955C18.6917 24.1585 14.1263 23.9824 12 23.9824C9.87369 23.9824 5.30173 24.1519 3.38377 23.3955C2.10529 22.8867 1.11977 21.9012 0.60447 20.6162C-0.158504 18.6917 0.0175557 14.1263 0.0175557 12C0.0175556 9.87369 -0.151984 5.30173 0.60447 3.38377C1.11325 2.10529 2.09877 1.11977 3.38377 0.60447C5.30825 -0.158505 9.87369 0.0175558 12 0.0175558ZM12.001 4.80076C8.01558 4.80076 4.80076 8.01558 4.80076 12.001C4.80086 15.9862 8.01564 19.2011 12.001 19.2011C15.9862 19.201 19.201 15.9862 19.2011 12.001C19.2011 8.01564 15.9862 4.80086 12.001 4.80076ZM12.001 7.32029C14.5826 7.3204 16.6816 9.4193 16.6816 12.001C16.6815 14.5825 14.5763 16.6815 12.001 16.6816C9.42556 16.6816 7.3204 14.5826 7.32029 12.001C7.32029 9.41923 9.41923 7.32029 12.001 7.32029ZM19.5332 2.72068C18.6024 2.72068 17.8476 3.46366 17.8476 4.37986C17.8477 5.29601 18.5962 6.03904 19.5332 6.03904C20.4638 6.03897 21.2187 5.30216 21.2187 4.37986C21.2187 3.4637 20.4639 2.72076 19.5332 2.72068Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18ZM4.26465 9.29688V19.9326H7.58105V9.29688H4.26465ZM16.0254 9.03027C14.4117 9.03039 13.3296 9.91148 12.8867 10.7471H12.8408V9.29688H9.65918V19.9326H12.9727V14.666C12.9727 13.2792 13.2373 11.9385 14.9619 11.9385C16.6614 11.9386 16.6865 13.521 16.6865 14.7549V19.9326H20V14.0898C20 11.2309 19.3824 9.03027 16.0254 9.03027ZM5.9209 4.00195C5.41146 4.002 4.92273 4.20382 4.5625 4.5625C4.20238 4.9212 4 5.40785 4 5.91504C4.00016 6.97099 4.86036 7.84561 5.9209 7.8457C6.98116 7.8457 7.84164 6.97105 7.8418 5.91504C7.8418 5.40776 7.63953 4.92121 7.2793 4.5625C6.91903 4.20378 6.4304 4.00195 5.9209 4.00195Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18ZM10.2842 12.8955L4.17188 20H5.55273L10.8975 13.7881L15.166 20H19.8281L13.4893 10.7754L19.3174 4H17.9365L12.876 9.88281L8.83398 4H4.17188L10.2842 12.8955ZM12.1484 10.7275L12.7676 11.6133L17.9375 19.0078H15.8154L11.5977 12.9746L10.9785 12.0879L6.05078 5.04004H8.17188L12.1484 10.7275Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H13.8682V15.0811H16.9883L17.4551 11.459H13.8682V9.14648C13.8682 8.09784 14.1594 7.38286 15.6631 7.38281L17.5811 7.38184V4.14258C17.2491 4.09842 16.1105 4 14.7861 4C12.0209 4.0001 10.1279 5.68833 10.1279 8.78809V11.459H7V15.0811H10.1279V24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative bg-orange-vlight-200 p-5 flex flex-col gap-5 rounded-[20px] mt-20">
+                        <img src="images/team2.png" alt="team" class="max-w-[200px] h-auto rounded-[11px] border-8 border-white mx-auto -mt-20 space-y-5">
+                        <div class="space-y-2">
+                            <h3 class="text-22 text-black">Sophia Martinez</h3>
+                            <p class="text-16 text-coffee !font-semibold">
+                                Pet Groomer
+                            </p>
+                        </div>
+                        <div class="dec flex-1">
+                            <p class="text-19 text-gray-dark">James is a caring and reliable dog walker who ensures your
+                                furry friends get the exercise, love, and attention they deserve.. <a href="javascript:void(0)" class="!font-bold text-coffee">Read More</a></p>
+                        </div>
+                        <div class="social-link flex items-center flex-wrap gap-4">
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.0175558C14.1263 0.0175558 18.6982 -0.151984 20.6162 0.60447C21.8947 1.11325 22.8802 2.09877 23.3955 3.38377C24.1585 5.30825 23.9824 9.87369 23.9824 12C23.9824 14.1263 24.1585 18.6982 23.3955 20.6162C22.8867 21.8947 21.9012 22.8802 20.6162 23.3955C18.6917 24.1585 14.1263 23.9824 12 23.9824C9.87369 23.9824 5.30173 24.1519 3.38377 23.3955C2.10529 22.8867 1.11977 21.9012 0.60447 20.6162C-0.158504 18.6917 0.0175557 14.1263 0.0175557 12C0.0175556 9.87369 -0.151984 5.30173 0.60447 3.38377C1.11325 2.10529 2.09877 1.11977 3.38377 0.60447C5.30825 -0.158505 9.87369 0.0175558 12 0.0175558ZM12.001 4.80076C8.01558 4.80076 4.80076 8.01558 4.80076 12.001C4.80086 15.9862 8.01564 19.2011 12.001 19.2011C15.9862 19.201 19.201 15.9862 19.2011 12.001C19.2011 8.01564 15.9862 4.80086 12.001 4.80076ZM12.001 7.32029C14.5826 7.3204 16.6816 9.4193 16.6816 12.001C16.6815 14.5825 14.5763 16.6815 12.001 16.6816C9.42556 16.6816 7.3204 14.5826 7.32029 12.001C7.32029 9.41923 9.41923 7.32029 12.001 7.32029ZM19.5332 2.72068C18.6024 2.72068 17.8476 3.46366 17.8476 4.37986C17.8477 5.29601 18.5962 6.03904 19.5332 6.03904C20.4638 6.03897 21.2187 5.30216 21.2187 4.37986C21.2187 3.4637 20.4639 2.72076 19.5332 2.72068Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18ZM4.26465 9.29688V19.9326H7.58105V9.29688H4.26465ZM16.0254 9.03027C14.4117 9.03039 13.3296 9.91148 12.8867 10.7471H12.8408V9.29688H9.65918V19.9326H12.9727V14.666C12.9727 13.2792 13.2373 11.9385 14.9619 11.9385C16.6614 11.9386 16.6865 13.521 16.6865 14.7549V19.9326H20V14.0898C20 11.2309 19.3824 9.03027 16.0254 9.03027ZM5.9209 4.00195C5.41146 4.002 4.92273 4.20382 4.5625 4.5625C4.20238 4.9212 4 5.40785 4 5.91504C4.00016 6.97099 4.86036 7.84561 5.9209 7.8457C6.98116 7.8457 7.84164 6.97105 7.8418 5.91504C7.8418 5.40776 7.63953 4.92121 7.2793 4.5625C6.91903 4.20378 6.4304 4.00195 5.9209 4.00195Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18ZM10.2842 12.8955L4.17188 20H5.55273L10.8975 13.7881L15.166 20H19.8281L13.4893 10.7754L19.3174 4H17.9365L12.876 9.88281L8.83398 4H4.17188L10.2842 12.8955ZM12.1484 10.7275L12.7676 11.6133L17.9375 19.0078H15.8154L11.5977 12.9746L10.9785 12.0879L6.05078 5.04004H8.17188L12.1484 10.7275Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H13.8682V15.0811H16.9883L17.4551 11.459H13.8682V9.14648C13.8682 8.09784 14.1594 7.38286 15.6631 7.38281L17.5811 7.38184V4.14258C17.2491 4.09842 16.1105 4 14.7861 4C12.0209 4.0001 10.1279 5.68833 10.1279 8.78809V11.459H7V15.0811H10.1279V24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative bg-orange-vlight-200 p-5 flex flex-col gap-5 rounded-[20px] mt-20">
+                        <img src="images/team3.png" alt="team" class="max-w-[200px] h-auto rounded-[11px] border-8 border-white mx-auto -mt-20 space-y-5">
+                        <div class="space-y-2">
+                            <h3 class="text-22 text-black">Amelia Schneider</h3>
+                            <p class="text-16 text-coffee !font-semibold">
+                                Veterinarian
+                            </p>
+                        </div>
+                        <div class="dec flex-1">
+                            <p class="text-19 text-gray-dark">James is a caring and reliable dog walker who ensures your
+                                furry friends get the exercise, love, and attention they deserve.. <a href="javascript:void(0)" class="!font-bold text-coffee">Read More</a></p>
+                        </div>
+                        <div class="social-link flex items-center flex-wrap gap-4">
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.0175558C14.1263 0.0175558 18.6982 -0.151984 20.6162 0.60447C21.8947 1.11325 22.8802 2.09877 23.3955 3.38377C24.1585 5.30825 23.9824 9.87369 23.9824 12C23.9824 14.1263 24.1585 18.6982 23.3955 20.6162C22.8867 21.8947 21.9012 22.8802 20.6162 23.3955C18.6917 24.1585 14.1263 23.9824 12 23.9824C9.87369 23.9824 5.30173 24.1519 3.38377 23.3955C2.10529 22.8867 1.11977 21.9012 0.60447 20.6162C-0.158504 18.6917 0.0175557 14.1263 0.0175557 12C0.0175556 9.87369 -0.151984 5.30173 0.60447 3.38377C1.11325 2.10529 2.09877 1.11977 3.38377 0.60447C5.30825 -0.158505 9.87369 0.0175558 12 0.0175558ZM12.001 4.80076C8.01558 4.80076 4.80076 8.01558 4.80076 12.001C4.80086 15.9862 8.01564 19.2011 12.001 19.2011C15.9862 19.201 19.201 15.9862 19.2011 12.001C19.2011 8.01564 15.9862 4.80086 12.001 4.80076ZM12.001 7.32029C14.5826 7.3204 16.6816 9.4193 16.6816 12.001C16.6815 14.5825 14.5763 16.6815 12.001 16.6816C9.42556 16.6816 7.3204 14.5826 7.32029 12.001C7.32029 9.41923 9.41923 7.32029 12.001 7.32029ZM19.5332 2.72068C18.6024 2.72068 17.8476 3.46366 17.8476 4.37986C17.8477 5.29601 18.5962 6.03904 19.5332 6.03904C20.4638 6.03897 21.2187 5.30216 21.2187 4.37986C21.2187 3.4637 20.4639 2.72076 19.5332 2.72068Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18ZM4.26465 9.29688V19.9326H7.58105V9.29688H4.26465ZM16.0254 9.03027C14.4117 9.03039 13.3296 9.91148 12.8867 10.7471H12.8408V9.29688H9.65918V19.9326H12.9727V14.666C12.9727 13.2792 13.2373 11.9385 14.9619 11.9385C16.6614 11.9386 16.6865 13.521 16.6865 14.7549V19.9326H20V14.0898C20 11.2309 19.3824 9.03027 16.0254 9.03027ZM5.9209 4.00195C5.41146 4.002 4.92273 4.20382 4.5625 4.5625C4.20238 4.9212 4 5.40785 4 5.91504C4.00016 6.97099 4.86036 7.84561 5.9209 7.8457C6.98116 7.8457 7.84164 6.97105 7.8418 5.91504C7.8418 5.40776 7.63953 4.92121 7.2793 4.5625C6.91903 4.20378 6.4304 4.00195 5.9209 4.00195Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18ZM10.2842 12.8955L4.17188 20H5.55273L10.8975 13.7881L15.166 20H19.8281L13.4893 10.7754L19.3174 4H17.9365L12.876 9.88281L8.83398 4H4.17188L10.2842 12.8955ZM12.1484 10.7275L12.7676 11.6133L17.9375 19.0078H15.8154L11.5977 12.9746L10.9785 12.0879L6.05078 5.04004H8.17188L12.1484 10.7275Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H13.8682V15.0811H16.9883L17.4551 11.459H13.8682V9.14648C13.8682 8.09784 14.1594 7.38286 15.6631 7.38281L17.5811 7.38184V4.14258C17.2491 4.09842 16.1105 4 14.7861 4C12.0209 4.0001 10.1279 5.68833 10.1279 8.78809V11.459H7V15.0811H10.1279V24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18Z" fill="#7E4C4F"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10">
+            <div class="container space-y-[30px] md:space-y-[48px]">
+                <div class="comman-title flex flex-col items-center justify-center text-center">
+                    <img src="images/titlePaw.svg" alt="title paw" class="w-[54px] h-auto">
+                    <h2 class="text-h2 text-black">Happy Customers, Happier Pets</h2>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="space-y-5 lg:order-1 order-2">
+                        <p class="text-19 text-gray-dark leading-[30px]">Our goal is simple: satisfied customers and
+                            joyful pets.
+                            Explore our curated selection of products designed to pamper, nourish, and delight your
+                            furry friends.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center ps-5">
+                                <img src="images/user1.png" alt="user" class="w-[50px] h-[50px] rounded-full border-[3px] border-white -ms-5 first-child:ms-0 object-cover">
+                                <img src="images/user2.png" alt="user" class="w-[50px] h-[50px] rounded-full border-[3px] border-white -ms-5 first-child:ms-0 object-cover">
+                                <img src="images/user3.png" alt="user" class="w-[50px] h-[50px] rounded-full border-[3px] border-white -ms-5 first-child:ms-0 object-cover">
+                                <img src="images/user4.png" alt="user" class="w-[50px] h-[50px] rounded-full border-[3px] border-white -ms-5 first-child:ms-0 object-cover">
+                                <div class="w-[50px] h-[50px] rounded-full border-[3px] border-white -ms-5 first-child:ms-0 text-14 !font-bold text-coffee flex items-center justify-center bg-orange">
+                                    +16
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                <p class="text-16 text-coffee !font-bold">5.0</p>
+                                <p class="text-16 text-black">(20 reviews)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:order-2 order-1">
+                        <div class="swiper review">
+                            <button class="review-button-prev swiper-button-prev flex items-center justify-center  bg-white border border-coffee !w-[35px] !h-[35px] rounded-full !left-[2px]">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.63702 13.2364C8.44173 13.041 8.33203 12.7761 8.33203 12.4999C8.33203 12.2237 8.44173 11.9588 8.63702 11.7635L14.5297 5.87074C14.6258 5.77125 14.7408 5.6919 14.8678 5.6373C14.9949 5.58271 15.1316 5.55398 15.2699 5.55277C15.4082 5.55157 15.5454 5.57793 15.6734 5.6303C15.8014 5.68268 15.9177 5.76003 16.0156 5.85783C16.1134 5.95564 16.1907 6.07194 16.2431 6.19996C16.2955 6.32797 16.3218 6.46514 16.3206 6.60345C16.3194 6.74176 16.2907 6.87845 16.2361 7.00554C16.1815 7.13263 16.1021 7.24757 16.0026 7.34366L10.8464 12.4999L16.0026 17.6562C16.1924 17.8526 16.2974 18.1157 16.295 18.3889C16.2926 18.662 16.1831 18.9233 15.99 19.1164C15.7968 19.3095 15.5356 19.4191 15.2624 19.4214C14.9893 19.4238 14.7262 19.3188 14.5297 19.1291L8.63702 13.2364Z" fill="#7e4c4f"></path>
+                                </svg>
+                            </button>
+                            <button class="review-button-next rotate-180 swiper-button-next flex items-center justify-center  bg-white border border-coffee !w-[35px] !h-[35px] rounded-full !right-[2px]">
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.63702 13.2364C8.44173 13.041 8.33203 12.7761 8.33203 12.4999C8.33203 12.2237 8.44173 11.9588 8.63702 11.7635L14.5297 5.87074C14.6258 5.77125 14.7408 5.6919 14.8678 5.6373C14.9949 5.58271 15.1316 5.55398 15.2699 5.55277C15.4082 5.55157 15.5454 5.57793 15.6734 5.6303C15.8014 5.68268 15.9177 5.76003 16.0156 5.85783C16.1134 5.95564 16.1907 6.07194 16.2431 6.19996C16.2955 6.32797 16.3218 6.46514 16.3206 6.60345C16.3194 6.74176 16.2907 6.87845 16.2361 7.00554C16.1815 7.13263 16.1021 7.24757 16.0026 7.34366L10.8464 12.4999L16.0026 17.6562C16.1924 17.8526 16.2974 18.1157 16.295 18.3889C16.2926 18.662 16.1831 18.9233 15.99 19.1164C15.7968 19.3095 15.5356 19.4191 15.2624 19.4214C14.9893 19.4238 14.7262 19.3188 14.5297 19.1291L8.63702 13.2364Z" fill="#7e4c4f"></path>
+                                </svg>
+                            </button>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="border-2 mx-5 rounded-[10px] border-dashed border-orange p-6 flex items-start gap-6 xsm:flex-row flex-col">
+                                        <img src="images/user1.png" alt="user" class="w-[60px] h-[60px] rounded-full object-cover">
+                                        <div class="space-y-2">
+                                            <div class="rating-wrapper flex items-center gap-1">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                            </div>
+                                            <p class="text-19 leading-[30px] !font-semibold text-black">Trusted by pet
+                                                lovers everywhere, we bring joy to pets through premium care, nutrition,
+                                                and fun essentials - because happy customers mean happier pets.</p>
+                                            <div class="onwer">
+                                                <p class="text-16 !font-bold text-coffee">James Anderson</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border-2 mx-5 rounded-[10px] border-dashed border-orange p-6 flex items-start gap-6 xsm:flex-row flex-col">
+                                        <img src="images/user1.png" alt="user" class="w-[60px] h-[60px] rounded-full object-cover">
+                                        <div class="space-y-2">
+                                            <div class="rating-wrapper flex items-center gap-1">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                                <img src="images/FStar.svg" alt="star" class="w-[18px] h-[18px]">
+                                            </div>
+                                            <p class="text-19 leading-[30px] !font-semibold text-black">Trusted by pet
+                                                lovers everywhere, we bring joy to pets through premium care, nutrition,
+                                                and fun essentials - because happy customers mean happier pets.</p>
+                                            <div class="onwer">
+                                                <p class="text-16 !font-bold text-coffee">James Anderson</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="subscribe bg-[position:top_18%_center] sm:bg-[position:top_13%_center] relative bg-no-repeat bg-auto" style="background-image: url(./sources/img/subscribe.png);">
+            <img src="images/footer-dogs.png" alt="dogs" class=" max-w-[300px] xmd:max-w-[354px] w-full absolute -bottom-[53px] left-0 z-2">
+            <div class="container">
+                <div class="text-center pt-20 pb-24 mxl:py-10 space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="text-h4 text-coffee">Stay Connected with Pawluxe!</h2>
+                        <p class="text-19 text-gray-dark">
+                            Join our pack and get exclusive offers, pet care tips, and the latest updates straight to
+                            your
+                            inbox.
+                        </p>
+                    </div>
+                    <div class="max-w-[672px] mx-auto">
+                        <form class="relative w-full flex sm:flex-row flex-col sm:gap-0 gap-3 items-center">
+                            <input id="email" type="email" placeholder="Enter your email address" class="py-4 px-9 bg-white sm:pe-[200px] w-full h-[60px] rounded-[50px] text-16 text-black placeholder:text-16 placeholder:text-[#5555556B] !font-semibold outline-none" required="">
+                            <button type="submit" class="comman-btn sm:w-fit w-full flex-none ms-0 sm:-ms-[197px] !shadow-none bg-coffee hover:bg-orange hover:text-coffee transition-all duration-300 ease-in-out text-white text-18-bold">
+                                Subscribe Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f-wrapper bg-coffee pt-20">
+            <div class="container">
+                <div class="grid grid-cols-1 5xsm:grid-cols-2 xsm:grid-cols-3 2sm:grid-cols-4 lg:grid-cols-6 gap-6 lg:gap-10">
+                    <div class="f-contet space-y-5 col-span-1 5xsm:col-span-2 xsm:col-span-3 2sm:col-span-2 lg:pe-10">
+                        <a href="index.html" class="max-w-[168px] block">
+                            <img src="images/FooterLogo.svg" alt="logo">
+                        </a>
+                        <p class="text-14 text-white">
+                            Our goal is simple, happy pets and stress-free owners. We curate products that support
+                            wellness, fun, and comfort, caring for companions of every kind.
+                        </p>
+                    </div>
+                    <div class="footer-link space-y-5">
+                        <div class="title text-16 !font-bold text-orange">Useful links</div>
+                        <ul class="space-y-3">
+                            <li><a class="text-14 text-white hover:text-orange" href="aboutUs.html">About</a>
+                            </li>
+                            <li><a class="text-14 text-white hover:text-orange" href="shop.html">Shop</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="services.html">Services</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="blog.html">Blog</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="contactUs.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link space-y-5">
+                        <div class="title text-16 !font-bold text-orange">Categories</div>
+                        <ul class="space-y-3">
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">Food</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">Toys</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">Accessories</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">Grooming</a>
+                            </li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">Healthcare</a>
+                            </li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">Clothing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-link space-y-5">
+                        <div class="title text-16 !font-bold text-orange">My account</div>
+                        <ul class="space-y-3">
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">My Profile</a>
+                            </li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">My Order
+                                    History</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">My
+                                    WishList</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">Order
+                                    Tracking</a></li>
+                            <li><a class="text-14 text-white hover:text-orange" href="javascript:void(0)">Shopping
+                                    Cart</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link space-y-5">
+                        <div class="title text-16 !font-bold text-orange">Follow us</div>
+                        <div class="social-link flex items-center flex-wrap gap-4">
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0.0175558C14.1263 0.0175558 18.6982 -0.151984 20.6162 0.60447C21.8947 1.11325 22.8802 2.09877 23.3955 3.38377C24.1585 5.30825 23.9824 9.87369 23.9824 12C23.9824 14.1263 24.1585 18.6982 23.3955 20.6162C22.8867 21.8947 21.9012 22.8802 20.6162 23.3955C18.6917 24.1585 14.1263 23.9824 12 23.9824C9.87369 23.9824 5.30173 24.1519 3.38377 23.3955C2.10529 22.8867 1.11977 21.9012 0.60447 20.6162C-0.158504 18.6917 0.0175557 14.1263 0.0175557 12C0.0175556 9.87369 -0.151984 5.30173 0.60447 3.38377C1.11325 2.10529 2.09877 1.11977 3.38377 0.60447C5.30825 -0.158505 9.87369 0.0175558 12 0.0175558ZM12.001 4.80076C8.01558 4.80076 4.80076 8.01558 4.80076 12.001C4.80086 15.9862 8.01564 19.2011 12.001 19.2011C15.9862 19.201 19.201 15.9862 19.2011 12.001C19.2011 8.01564 15.9862 4.80086 12.001 4.80076ZM12.001 7.32029C14.5826 7.3204 16.6816 9.4193 16.6816 12.001C16.6815 14.5825 14.5763 16.6815 12.001 16.6816C9.42556 16.6816 7.3204 14.5826 7.32029 12.001C7.32029 9.41923 9.41923 7.32029 12.001 7.32029ZM19.5332 2.72068C18.6024 2.72068 17.8476 3.46366 17.8476 4.37986C17.8477 5.29601 18.5962 6.03904 19.5332 6.03904C20.4638 6.03897 21.2187 5.30216 21.2187 4.37986C21.2187 3.4637 20.4639 2.72076 19.5332 2.72068Z" fill="white"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18ZM4.26465 9.29688V19.9326H7.58105V9.29688H4.26465ZM16.0254 9.03027C14.4117 9.03039 13.3296 9.91148 12.8867 10.7471H12.8408V9.29688H9.65918V19.9326H12.9727V14.666C12.9727 13.2792 13.2373 11.9385 14.9619 11.9385C16.6614 11.9386 16.6865 13.521 16.6865 14.7549V19.9326H20V14.0898C20 11.2309 19.3824 9.03027 16.0254 9.03027ZM5.9209 4.00195C5.41146 4.002 4.92273 4.20382 4.5625 4.5625C4.20238 4.9212 4 5.40785 4 5.91504C4.00016 6.97099 4.86036 7.84561 5.9209 7.8457C6.98116 7.8457 7.84164 6.97105 7.8418 5.91504C7.8418 5.40776 7.63953 4.92121 7.2793 4.5625C6.91903 4.20378 6.4304 4.00195 5.9209 4.00195Z" fill="white"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18ZM10.2842 12.8955L4.17188 20H5.55273L10.8975 13.7881L15.166 20H19.8281L13.4893 10.7754L19.3174 4H17.9365L12.876 9.88281L8.83398 4H4.17188L10.2842 12.8955ZM12.1484 10.7275L12.7676 11.6133L17.9375 19.0078H15.8154L11.5977 12.9746L10.9785 12.0879L6.05078 5.04004H8.17188L12.1484 10.7275Z" fill="white"></path>
+                                </svg>
+                            </a>
+                            <a href="javascript:void(0)" class="block w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0C21.3137 0 24 2.68629 24 6V18C24 21.3137 21.3137 24 18 24H13.8682V15.0811H16.9883L17.4551 11.459H13.8682V9.14648C13.8682 8.09784 14.1594 7.38286 15.6631 7.38281L17.5811 7.38184V4.14258C17.2491 4.09842 16.1105 4 14.7861 4C12.0209 4.0001 10.1279 5.68833 10.1279 8.78809V11.459H7V15.0811H10.1279V24H6C2.68629 24 0 21.3137 0 18V6C0 2.68629 2.68629 0 6 0H18Z" fill="white"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="branding max-w-[622px] h-auto mx-auto py-5 pb-10"><img src="images/PawLuxe.png" alt="branding" class="w-full h-full"></div>
+            </div>
+            <div class="copy-right border-t border-white py-5">
+                <div class="container">
+                    <div class="flex items-center justify-between gap-3 xmd:flex-row flex-col-reverse ">
+                        <p class="text-16 text-white">© Pawluxe 2025 | All Rights Reserved</p>
+                        <ul class="flex items-center gap-3 flex-wrap xmd:justify-end justify-center">
+                            <li class="relative pe-3 after:content-[''] after:absolute after:w-[1px] after:h-full after:bg-[#FFFFFF4D] after:top-0 after:bottom-0 after:right-0 last:pe-0 last:after:content-none">
+                                <a href="javascript:void(0)" class="text-14 !font-normal text-white hover:text-orange transition-colors duration-300 ease-in-out block">Returns
+                                    and Refunds</a>
+                            </li>
+                            <li class="relative pe-3 after:content-[''] after:absolute after:w-[1px] after:h-full after:bg-[#FFFFFF4D] after:top-0 after:bottom-0 after:right-0 last:pe-0 last:after:content-none">
+                                <a href="javascript:void(0)" class="text-14 !font-normal text-white hover:text-orange transition-colors duration-300 ease-in-out block">Terms
+                                    of Service</a>
+                            </li>
+                            <li class="relative pe-3 after:content-[''] after:absolute after:w-[1px] after:h-full after:bg-[#FFFFFF4D] after:top-0 after:bottom-0 after:right-0 last:pe-0 last:after:content-none">
+                                <a href="javascript:void(0)" class="text-14 !font-normal text-white hover:text-orange transition-colors duration-300 ease-in-out block">Cookie
+                                    Policy</a>
+                            </li>
+                            <li class="relative pe-3 after:content-[''] after:absolute after:w-[1px] after:h-full after:bg-[#FFFFFF4D] after:top-0 after:bottom-0 after:right-0 last:pe-0 last:after:content-none">
+                                <a href="javascript:void(0)" class="text-14 !font-normal text-white hover:text-orange transition-colors duration-300 ease-in-out block">Shipping
+                                    Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        const ReviewSwiper = new Swiper(".review", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".review-button-next",
+                prevEl: ".review-button-prev",
+            },
+        });
+
+        $(document).ready(function () {
+            const counters = document.querySelectorAll(".counter");
+            let counted = false;
+
+            function startCounter(counter) {
+                const $this = $(counter);
+                const countTo = $this.attr("data-target");
+
+                $({ countNum: 0 }).animate(
+                    { countNum: countTo },
+                    {
+                        duration: 2000,
+                        easing: "swing",
+                        step: function () {
+                            $this.contents().first()[0].textContent = Math.floor(this.countNum);
+                        },
+                        complete: function () {
+                            $this.contents().first()[0].textContent = this.countNum;
+                        },
+                    }
+                );
+            }
+
+            const observer = new IntersectionObserver(
+                function (entries, observer) {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting && !counted) {
+                            counted = true;
+                            $(".counter").each(function () {
+                                startCounter(this);
+                            });
+                            observer.disconnect();
+                        }
+                    });
+                },
+                { threshold: 0.3 }
+            );
+
+            const section = document.querySelector(".counter").closest("section") || document.querySelector(".counter").parentElement;
+            if (section) {
+                observer.observe(section);
+            }
+        });
+    </script>
+
+
+
+</body></html>
