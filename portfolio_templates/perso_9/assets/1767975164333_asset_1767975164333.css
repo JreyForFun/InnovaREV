@@ -1,0 +1,13 @@
+@font-face{
+ font-family:'Red-Hat-Display';
+ src:url('1767975164597_RedHatDisplayRegular.ttf') format('truetype');
+ font-weight:400;
+ font-style:normal;
+ font-display:swap
+}@font-face{
+ font-family:'Red-Hat-Display';
+ src:url('1767975165631_RedHatDisplayBlack.ttf') format('truetype');
+ font-weight:900;
+ font-style:normal;
+ font-display:swap
+}
