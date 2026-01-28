@@ -1,0 +1,501 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Kandel – Professional Resume</title>
+  <link rel="stylesheet" href="assets/1769619677715_all.min.css">
+  <script src="assets/1769619677709_html2pdf.bundle.min.js" type="d7aa9baf0b5ed0911913de2c-text/javascript"></script>
+  <style>
+    /* RESET & BASE */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height:1.4; color:#333;
+      background:linear-gradient(135deg,#f5f7fa,#c3cfe2);
+      padding:20px 0;
+    }
+
+    /* CONTROLS */
+    .web-controls {
+      position:fixed; top:20px; right:20px; z-index:1000;
+      display:flex; gap:10px;
+    }
+    .btn {
+      padding:12px 24px; border:none; border-radius:8px;
+      cursor:pointer; font-weight:600; display:inline-flex;
+      align-items:center; gap:8px; transition:all .3s;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      color:#fff;
+    }
+    .btn-primary { background:linear-gradient(135deg,#667eea,#764ba2); }
+    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.15); }
+    .btn-secondary { background:linear-gradient(135deg,#f093fb,#f5576c); }
+    .btn-secondary:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.15); }
+
+    /* LOADING */
+    .loading {
+      display:none; position:fixed; top:50%; left:50%;
+      transform:translate(-50%,-50%); background:rgba(0,0,0,0.8);
+      color:#fff; padding:20px; border-radius:8px; z-index:9999;
+    }
+    .spinner {
+      border:3px solid #f3f3f3; border-top:3px solid #0066cc;
+      border-radius:50%; width:30px; height:30px;
+      animation:spin 1s linear infinite; margin:0 auto 10px;
+    }
+    @keyframes spin { to { transform:rotate(360deg) } }
+
+    /* RESUME BOX */
+    .resume-container {
+      max-width:8.5in; margin:0 auto;
+      background:#fff; border-radius:12px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.1);
+      overflow:visible;
+    }
+    .resume-content {
+      padding:0.6in;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:0.5in;
+    }
+
+    /* HEADER */
+    .header {
+      grid-column:1/-1;
+      text-align:center; margin-bottom:.4in;
+      padding:.3in;
+      background:linear-gradient(135deg,#0066cc,#003d7a);
+      color:#fff; border-radius:8px;
+      position:relative;
+      page-break-after:avoid;
+    }
+    .header::before {
+      content:'';
+      position:absolute; inset:0;
+      background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0,0v46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1047.87,8.12,1112,0H0Z" fill="rgba(255,255,255,0.1)"/></svg>') no-repeat bottom;
+      background-size:cover; opacity:.3;
+    }
+    .name { font-size:28px; font-weight:800; margin-bottom:8px; text-shadow:2px 2px 4px rgba(0,0,0,0.1); }
+    .title { font-size:16px; font-weight:600; margin-bottom:6px; opacity:.95; }
+    .subtitle { font-size:14px; font-style:italic; margin-bottom:12px; opacity:.9; }
+    .contact {
+      font-size:12px; display:flex; justify-content:center;
+      gap:20px; flex-wrap:wrap; opacity:.95;
+    }
+    .contact-item { display:flex; align-items:center; gap:5px; }
+
+    /* SECTIONS */
+    .section { margin-bottom:.25in; page-break-inside:avoid; break-inside:avoid; }
+    .section-title {
+      font-size:16px; font-weight:700; color:#0066cc;
+      margin-bottom:12px; padding-bottom:6px;
+      border-bottom:2px solid #0066cc;
+      display:flex; align-items:center; gap:8px;
+      text-transform:uppercase; letter-spacing:.5px;
+    }
+
+    /* ITEMS */
+    .experience-item,
+    .education-item,
+    .project-item,
+    .publication-item {
+      margin-bottom:16px; padding:12px;
+      background:#f8f9fa; border-radius:8px;
+      border-left:4px solid #0066cc;
+      opacity:0; transform:translateY(20px);
+      page-break-inside:avoid; break-inside:avoid;
+    }
+    .experience-item.visible,
+    .education-item.visible,
+    .project-item.visible,
+    .publication-item.visible {
+      opacity:1; transform:translateY(0);
+      transition:opacity .6s ease-out, transform .6s ease-out;
+    }
+    .experience-item:hover,
+    .education-item:hover,
+    .project-item:hover,
+    .publication-item:hover {
+      transform:translateX(5px);
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .job-title { font-weight:700; font-size:13px; color:#0066cc; margin-bottom:4px; }
+    .company   { font-weight:600; font-size:12px; color:#333; margin-bottom:2px; }
+    .date      { font-size:11px; color:#666; font-style:italic; margin-bottom:2px; }
+    .location  { font-size:10px; color:#888; margin-bottom:6px; }
+    .description { font-size:11px; text-align:justify; line-height:1.4; }
+    .description ul { margin:6px 0 0 16px; }
+    .description li { font-size:10px; margin-bottom:3px; line-height:1.3; }
+
+    /* SKILLS GRID */
+    .skills-grid { display:grid; grid-template-columns:1fr; gap:12px; margin-top:8px; }
+    .skill-category { background:#f8f9fa; padding:10px; border-radius:6px; border-left:3px solid #0066cc; }
+    .skill-category-title { font-weight:600; font-size:11px; color:#0066cc; margin-bottom:4px; }
+    .skill-tags { display:flex; flex-wrap:wrap; gap:4px; }
+    .skill-tag {
+      background:linear-gradient(135deg,#0066cc,#004499);
+      color:#fff; padding:3px 8px; border-radius:12px;
+      font-size:9px; font-weight:500; box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    }
+    .highlight-box {
+      background:linear-gradient(135deg,#e3f2fd,#bbdefb);
+      padding:12px; border-radius:8px; border:1px solid #0066cc;
+      margin:8px 0; page-break-inside:avoid; break-inside:avoid;
+    }
+    .metric { font-weight:700; color:#0066cc; }
+
+    /* COLUMNS ON MOBILE */
+    @media (max-width:768px) {
+      .resume-content { grid-template-columns:1fr; padding:.4in; }
+      .web-controls { position:relative; top:auto; right:auto; justify-content:center; margin-bottom:20px; }
+      .contact { flex-direction:column; gap:8px; }
+    }
+
+    /* PRINT OVERRIDES */
+    @media print {
+      body { background:#fff; padding:0; }
+      .web-controls { display:none; }
+      .resume-container { box-shadow:none; border-radius:0; max-width:none; }
+      .resume-content { padding:0.5in; display:block; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="web-controls">
+    <button class="btn btn-primary" onclick="if (!window.__cfRLUnblockHandlers) return false; downloadPDF()" data-cf-modified-d7aa9baf0b5ed0911913de2c-="">
+      <i class="fas fa-download"></i> Download PDF
+    </button>
+    <button class="btn btn-secondary" onclick="if (!window.__cfRLUnblockHandlers) return false; printResume()" data-cf-modified-d7aa9baf0b5ed0911913de2c-="">
+      <i class="fas fa-print"></i> Print Resume
+    </button>
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    <div>Generating PDF…</div>
+  </div>
+
+  <div class="resume-container" id="resume">
+    <div class="resume-content">
+
+      <!-- HEADER -->
+      <div class="header">
+        <div class="name">ABHISHEK KANDEL</div>
+        <div class="title">Senior Software Engineer &amp; Data Science Innovator</div>
+        <div class="subtitle">Transformational Technology Leader | AI/ML Research Pioneer | Cloud Architecture Expert</div>
+        <div class="contact">
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i>Noida, Uttar Pradesh, India</div>
+          <div class="contact-item"><i class="fab fa-linkedin"></i>linkedin.com/in/abhishekkandel45</div>
+          <div class="contact-item"><i class="fas fa-users"></i>938+ Professional Network</div>
+          <div class="contact-item"><i class="fas fa-newspaper"></i>389+ Newsletter Subscribers</div>
+        </div>
+      </div>
+
+      <!-- LEFT COLUMN -->
+      <div class="left-column">
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</div>
+
+          <div class="experience-item">
+            <div class="job-title">Senior Data Officer &amp; GIS Systems Architect</div>
+            <div class="company">NAXA – Leading Geospatial Technology Firm</div>
+            <div class="date">Apr 2025 – Present</div>
+            <div class="location">Kathmandu, Nepal</div>
+            <div class="description">
+              <ul>
+                <li>Spearheaded enterprise-level GIS implementation for disaster preparedness across South Asia, impacting <span class="metric">500K+ potential beneficiaries</span></li>
+                <li>Architected anticipatory-action solutions using spatial data analytics &amp; ML</li>
+                <li>Led a 12-engineer team building DASTAA platform, a <span class="metric">D-Tech Awards 2025 Singapore Finalist</span></li>
+                <li>Optimized geospatial pipelines, cutting compute time by <span class="metric">65%</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Co-Founder &amp; CTO</div>
+            <div class="company">Verastix Technology – Emerging Tech Startup</div>
+            <div class="date">Mar 2025 – Present</div>
+            <div class="location">Kathmandu, Nepal</div>
+            <div class="description">
+              <ul>
+                <li>Built startup from scratch, securing <span class="metric">25+ enterprise clients</span></li>
+                <li>Pioneered SEO &amp; digital strategies for <span class="metric">340% traffic uplift</span></li>
+                <li>Developed AI-driven marketing automation for B2B</li>
+                <li>Forged Fortune 500 partnerships, driving <span class="metric">$150K+ annual revenue</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Senior Digital Marketing Strategist &amp; Consultant</div>
+            <div class="company">Media Arch Inc.</div>
+            <div class="date">Jun 2022 – May 2025</div>
+            <div class="location">Kathmandu, Nepal</div>
+            <div class="description">
+              <ul>
+                <li>Managed $2M+ portfolios, beating ROI targets by 45–60%</li>
+                <li>Ran Facebook Ads reaching 5M+ users/month, 3.2× industry conversions</li>
+                <li>Authored 200+ content pieces, establishing thought leadership</li>
+                <li>Mentored juniors, achieving 85% client retention</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Technology Innovation Leader &amp; Computer Club President</div>
+            <div class="company">Kathmandu Model Secondary School</div>
+            <div class="date">Jul 2020 – Jan 2022</div>
+            <div class="location">Kathmandu, Nepal</div>
+            <div class="description">
+              <ul>
+                <li>Built Django/PostgreSQL/AWS platform for 2,000+ users</li>
+                <li>Organized 8 tech events (CodeJam, robotics), 500+ participants</li>
+                <li>Rolled out Office 365 &amp; Azure, boosting efficiency 40%</li>
+                <li>Set tech-transformation model adopted by 12+ schools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-laptop-code"></i> Flagship Projects &amp; Innovations</div>
+
+          <div class="project-item">
+            <div class="job-title">Project SANJU</div>
+            <div class="date">2025</div>
+            <div class="description">
+              <div class="highlight-box">
+                <strong>Scalable Adaptive Network for Just-In-Time Utilization</strong> – cloud optimization framework.
+              </div>
+              <ul>
+                <li>73% latency reduction, 40% cost savings, sub-second scaling</li>
+                <li>ARIMA &amp; LSTM predictive models for multi-cloud provisioning</li>
+                <li><span class="metric">Patent pending</span> for JIT algorithms</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="job-title">DASTAA Platform</div>
+            <div class="date">2025</div>
+            <div class="description">
+              <div class="highlight-box">
+                <strong>Digital &amp; Spatial Technologies for Anticipatory Action</strong> – early-warning/disaster preparedness.
+              </div>
+              <ul>
+                <li>D-Tech Awards 2025 Singapore Finalist (top 3%)</li>
+                <li>Integrated satellite, IoT, analytics to cut response time 60%</li>
+                <li>Saves thousands of lives via proactive alerts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end left-column -->
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-column">
+
+        <!-- ACADEMICS -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-graduation-cap"></i> Academic Excellence</div>
+          <div class="education-item">
+            <div class="job-title">B.Tech, Computer Science Engineering</div>
+            <div class="company">Sharda University</div>
+            <div class="date">Nov 2021 – Dec 2025</div>
+            <div class="location">Greater Noida, India</div>
+            <div class="description">
+              <ul>
+                <li>Specialization: AI, ML &amp; Cloud Architecture</li>
+                <li>Research: Intelligent Systems &amp; Behavioral Analytics</li>
+                <li>Contributor to research labs &amp; innovation initiatives</li>
+              </ul>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="job-title">Higher Secondary (Science)</div>
+            <div class="company">Kathmandu Model Secondary School</div>
+            <div class="date">Jan 2019 – Sep 2021</div>
+            <div class="location">Kathmandu, Nepal</div>
+            <div class="description">
+              Distinguished in Mathematics, Physics &amp; Computer Science
+            </div>
+          </div>
+        </div>
+
+        <!-- PUBLICATIONS -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-file-alt"></i> Research Publications &amp; Patents</div>
+          <div class="publication-item">
+            <div class="publication-title">SUBIINA: Stress &amp; Unhappiness Behavioral Identification</div>
+            <div class="publication-venue">IEEE CICTN-2025 (IF 3.2)</div>
+            <div class="date">Feb 2025</div>
+            <div class="description">
+              <ul>
+                <li>Multimodal speech &amp; facial ANN, 94.7% accuracy</li>
+                <li>Cited by 15+ studies in mental-health tech</li>
+              </ul>
+            </div>
+          </div>
+          <div class="publication-item">
+            <div class="publication-title">Blockchain-Based Secured E-voting Framework</div>
+            <div class="publication-venue">IEEE SMART-2023</div>
+            <div class="date">Dec 2023</div>
+            <div class="description">
+              <ul>
+                <li>SHA-256 &amp; ECC voting for 10M+ concurrent users</li>
+                <li>Mathematical proof of integrity &amp; privacy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- TECH SKILLS -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-cogs"></i> Advanced Technical Expertise</div>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <div class="skill-category-title">Programming &amp; Frameworks</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Python (Expert)</span>
+                <span class="skill-tag">Django (Advanced)</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL/NoSQL</span>
+                <span class="skill-tag">RESTful APIs</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-category-title">Cloud &amp; DevOps</div>
+              <div class="skill-tags">
+                <span class="skill-tag">AWS Solutions Architect</span>
+                <span class="skill-tag">Azure (Certified)</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">CI/CD Pipelines</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-category-title">AI/ML &amp; Data Science</div>
+              <div class="skill-tags">
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">ARIMA/LSTM Models</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">NLP</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <div class="skill-category-title">Specialized Technologies</div>
+              <div class="skill-tags">
+                <span class="skill-tag">GIS</span>
+                <span class="skill-tag">Blockchain</span>
+                <span class="skill-tag">IoT Integration</span>
+                <span class="skill-tag">Real-time Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTS & AWARDS -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-certificate"></i> Professional Certifications</div>
+          <div class="education-item">
+            <div class="job-title">Google Cloud Certified – Advanced Networking Specialist</div>
+            <div class="company">Google Cloud Platform</div>
+            <div class="date">Jul 2024</div>
+            <div class="description">Credential ID: 9852781</div>
+          </div>
+          <div class="education-item">
+            <div class="job-title">Generative AI Specialist Certification</div>
+            <div class="company">Google AI</div>
+            <div class="date">Nov 2024</div>
+            <div class="description">Credential ID: 13031685</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-title"><i class="fas fa-trophy"></i> Awards &amp; Recognition</div>
+          <div class="education-item">
+            <div class="job-title">D-Tech Awards 2025 Singapore Finalist</div>
+            <div class="company">SAFE STEPS Foundation</div>
+            <div class="date">Jun 2025</div>
+            <div class="description"><span class="metric">Top 3% of 500+ submissions</span></div>
+          </div>
+          <div class="education-item">
+            <div class="job-title">Provincial Assembly EMCC Leadership Award</div>
+            <div class="company">Kathmandu Model College</div>
+            <div class="date">Oct 2021</div>
+            <div class="description">Distinguished Leadership Recognition</div>
+          </div>
+        </div>
+
+        <!-- IMPACT -->
+        <div class="section">
+          <div class="section-title"><i class="fas fa-users"></i> Leadership &amp; Impact</div>
+          <div class="description">
+            <ul>
+              <li><strong>Newsletter “Abhishek Kandel Blog”:</strong> 389+ subscribers, 50K+ monthly readers</li>
+              <li><strong>Research Leadership:</strong> CS Club Head &amp; Principal Researcher at Sainik Awasiya Mahavidyalaya</li>
+              <li><strong>Community:</strong> Volunteer &amp; mentor in Animal Welfare, EdTech, Human Rights, STEM</li>
+              <li><strong>Mentorship:</strong> Guiding 25+ junior devs in Cloud, Web, ML</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- end right-column -->
+
+    </div><!-- end resume-content -->
+  </div><!-- end resume-container -->
+
+  <script type="d7aa9baf0b5ed0911913de2c-text/javascript">
+    function downloadPDF() {
+      const loading = document.getElementById('loading');
+      loading.style.display = 'block';
+
+      const element = document.getElementById('resume');
+      const opt = {
+        margin:      0.5,
+        filename:    'Abhishek_Kandel_Resume.pdf',
+        pagebreak:   { mode: ['css','legacy'] },
+        html2canvas: { scale:2, useCORS:true, allowTaint:true },
+        jsPDF:       { unit:'in', format:'letter', orientation:'portrait' }
+      };
+
+      html2pdf().set(opt)
+                .from(element)
+                .save()
+                .then(() => loading.style.display = 'none')
+                .catch(err => {
+                  console.error(err);
+                  loading.style.display = 'none';
+                  alert('Error generating PDF. Please try again.');
+                });
+    }
+
+    function printResume() {
+      window.print();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold:0.1, rootMargin:'0px 0px -50px 0px' });
+
+      document.querySelectorAll(
+        '.experience-item, .education-item, .project-item, .publication-item'
+      ).forEach(el => observer.observe(el));
+    });
+  </script>
+<script src="assets/1769619677712_rocket-loader.min.js" data-cf-settings="d7aa9baf0b5ed0911913de2c-|49" defer=""></script>
+
+</body></html>
