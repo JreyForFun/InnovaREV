@@ -1,0 +1,1288 @@
+.team-part {
+     border-radius: 5px;
+     overflow: hidden;
+     box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.05);
+}
+/* team style 1 */
+ .witr_team_section{
+     position: relative;
+     text-align:center;
+}
+ .witr_team_section img {
+}
+ .witr_team_section:before {
+     content:"";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .witr_team_section:hover:before{
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .team_overlay_icon a {
+     position: absolute;
+     -webkit-transform: translate(-50%,-50%);
+             transform: translate(-50%,-50%);
+     left: 50%;
+     top: 50%;
+     font-size: 22px;
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     width: 52px;
+     height: 52px;
+     line-height: 52px;
+	 border-radius:50%;
+}
+ .witr_team_section:hover .team_overlay_icon a{
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .witr_team_content {
+     padding: 23px 5px;
+}
+ .witr_team_content h5 {
+     margin: 0;
+}
+ .witr_team_content span {
+     font-size: 18px;
+}
+/* team style 2 */
+ .team-sec{
+     position:relative;
+}
+ .team-sec:before{
+     content:"";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .team-sec img{
+     width:100%;
+}
+ .witr_team_content2 {
+     position: absolute;
+     width: 100%;
+     left: 50%;
+     top: 50%;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+             transform: translateX(-50%) translateY(-50%);
+     padding: 0 25px;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .team-part:hover .witr_team_content2, .team-part:hover .team-sec:before{
+     top: -670px;
+}
+ .witr_team_content2 h5 {
+     font-size: 23px;
+     margin: 0;
+}
+ .witr_team_content2 p {
+     padding-top: 10px;
+}
+
+ .team-part .team-social {
+     position: absolute;
+     bottom: -110px;
+     height: 100px;
+     width: 100%;
+     text-align: center;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .team-part:hover .team-social {
+     bottom: 0px;
+}
+ .team-social ul {
+     padding-top: 30px;
+}
+ .team-social ul li {
+     display: inline-block;
+     margin: 0 3px;
+}
+ .team-social ul li a {
+     font-size: 17px;
+     height: 34px;
+     width: 34px;
+     line-height: 34px;
+     text-align: center;
+     border-radius: 50%;
+     display: inline-block;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+/* team style 3 */
+ .witr_team_sec_3{
+     position:relative;
+}
+ .witr_team_sec_3 img{
+     width:100%;
+}
+ .witr_team_sec_3:before{
+     content:"";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: -150%;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .witr_team_content3 {
+     position: absolute;
+     width: 100%;
+     left: 50%;
+     top: -350px;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+             transform: translateX(-50%) translateY(-50%);
+     padding: 0 25px;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .team-part:hover .witr_team_content3{
+     top: 50%;
+}
+ .team-part:hover .witr_team_sec_3:before{
+     top: 0;
+}
+ .witr_team_content3 h5 {
+     font-size: 23px;
+     margin: 0;
+}
+ .witr_team_content3 p {
+     padding-top: 10px;
+}
+ .witr_team_content3 ul li {
+     display: inline-block;
+}
+ .witr_team_content3 ul li a {
+     display: inline-block;
+     margin: 0 11px;
+     margin-top: 4px;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .team-part .witr_team_sec_3 .team-social {
+     position: absolute;
+     bottom: 0px;
+     left: 0;
+     height: 100px;
+     width: 100%;
+     text-align: center;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .team-part:hover .witr_team_sec_3 .team-social {
+     bottom: -110px;
+}
+/* team style 4 */
+ .em-team {
+     text-align:center;
+     position: relative;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .em-team-one {
+     position: relative;
+     overflow: hidden;
+     padding-bottom: 55px;
+}
+ .em-team-content-image img {
+     width: 100%;
+}
+ .em-team-content-waraper {
+     bottom: -67px;
+     left: 0;
+     margin: 0 10px;
+     padding: 30px 0;
+     position: absolute;
+     right: 0;
+     box-shadow: 0px 0px 65px 0px rgb(0, 0, 0,0.08);
+     -webkit-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+}
+ .em-team-content-title h2 {
+     margin-bottom: 5px;
+     -webkit-transition: all 0.3s ease-in-out 0s;
+     transition: all 0.3s ease-in-out 0s;
+     font-size:22px;
+}
+ .em-team-content-subtitle {
+     font-size: 16px;
+     margin-bottom: 0;
+     -webkit-transition: all 0.3s ease-in-out 0s;
+     transition: all 0.3s ease-in-out 0s;
+}
+ .em-team-content-socials a {
+     border-radius: 50%;
+     display: inline-block;
+     height: 35px;
+     line-height: 35px;
+     margin: 14px 3px 0;
+     text-align: center;
+     width: 35px;
+}
+ .em-team-content-socials {
+     position: relative;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .em-team:hover .em-team-content-waraper{
+     bottom: 0px;
+}
+ .em-content-title h5 {
+     font-size: 23px;
+     margin-bottom: 0;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .em-content-title h5 a {
+     font-weight: 700;
+}
+ .em-content-subtitle {
+     font-size: 16px;
+     margin: 5px 0 0;
+     text-transform: capitalize;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+
+/* team style 5 */
+ .team-wrap {
+     overflow: visible;
+     position: relative;
+}
+ .team-front {
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     transition: opacity 0.4s, -webkit-transform 0.8s;
+     -webkit-transition: opacity 0.4s, -webkit-transform 0.8s;
+     transition: transform 0.8s, opacity 0.4s;
+     transition: transform 0.8s, opacity 0.4s, -webkit-transform 0.8s;
+}
+ .team-front {
+     z-index: 2;
+     position: relative;
+     border-radius: 50%;
+     overflow: hidden;
+     -webkit-transform:scale(1);
+             transform:scale(1);
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .team-style-2 .em-content-image img {
+     margin: 0 auto;
+     display: block;
+     width: 100%;
+     border-radius: 100%;
+}
+ .team-style-2 .em-team:hover .em-content-image:before {
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+ .team-back-wraper {
+     -webkit-transition: -webkit-transform 0.6s;
+     transition: -webkit-transform 0.6s;
+     transition: transform 0.6s;
+     transition: transform 0.6s, -webkit-transform 0.6s;
+}
+ .team-back-wraper {
+     border-radius: 50%;
+     bottom: 0;
+     height: 99%;
+     position: absolute;
+     text-align: center;
+     top: 0;
+     width: 99%;
+     z-index: 1;
+     right: 0;
+     left: 0;
+     margin: auto;
+}
+ .team-wrap:hover .team-front{
+     -webkit-transform:scale(0);
+     transform:scale(0);
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+ .team-style-2 .em-content-socials a {
+     display: inline-block;
+     font-size: 18px;
+     margin: 0 6px;
+}
+ .team-style-2 .em-content-socials a:hover {
+}
+ .team-style-2 .em-content-socials {
+     margin-top: 11px;
+}
+ .team-style-2 .em-content-waraper {
+     left: 0;
+     padding: 30px 14px 28px;
+     position: absolute;
+     right: 0;
+     top: 50%;
+     -webkit-transform: translateY(-50%);
+             transform: translateY(-50%);
+}
+ .team-style-2 .em-content-desc-inner {
+     margin-top: 5px;
+}
+ .team-style-2 .em-content-button a {
+     display: inline-block;
+     -webkit-transition: all 0.5s ease 0s;
+     transition: all 0.5s ease 0s;
+}
+/* tyeam style 6 */
+ .witr_single_team {
+     position: relative;
+     overflow: hidden;
+}
+ .witr_single_team img {
+     width: 100%;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .witr_single_team:hover img {
+     -webkit-transform: scale(1.04);
+             transform: scale(1.04);
+}
+ .witr_single_team:after{
+     position: absolute;
+     content: '';
+     top:0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     -webkit-transition: all 0.4s ease-out;
+     transition: all 0.4s ease-out;
+}
+ .witr_single_team:hover:after{
+     visibility: visible;
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .witr_team_content_car{
+     position: absolute;
+     left: -300px;
+     bottom: 22px;
+     z-index: 3;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .witr_single_team:hover .witr_team_content_car{
+     left: 30px 
+}
+ .witr_team_content_car span {
+     font-size: 16px;
+     font-weight: 600;
+     display: inline-block;
+     margin: 0 0 9px;
+}
+ .witr_team_content_car h5{
+     font-size: 22px;
+     margin: 0;
+}
+/* team style 7 */
+ .busi_singleTeam{
+     position: relative;
+     overflow: hidden;
+}
+ .busi_singleTeam:before{
+     position: absolute;
+     content: '';
+     top:0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .busi_singleTeam img{
+     width: 100%;
+     height: auto;
+}
+ .TM_center{
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 50%;
+     -webkit-transform: translateY(-50%);
+             transform: translateY(-50%);
+     z-index: 2;
+}
+.busi_TMHover {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    opacity: 0;
+    width: calc(90% - 0px);
+    height: calc(40% - 0px);
+    -webkit-transition: all ease .4s;
+    transition: all ease .4s;
+}
+ .busi_singleTeam:hover .busi_TMHover{
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .busi_TMHover:before {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 0px;
+     height: 3px;
+     content: '';
+     -webkit-transition: all ease 500ms;
+     transition: all ease 500ms;
+}
+ .busi_TMHover:after {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     width: 0px;
+     height: 3px;
+     content: '';
+     -webkit-transition: all ease 500ms;
+     transition: all ease 500ms;
+}
+ .busi_singleTeam:hover .busi_TMHover:before, .busi_singleTeam:hover .busi_TMHover:after{
+     width: 80px;
+}
+ .busi_singleTeam h5{
+     font-size: 23px;
+     margin-bottom: 0px;
+     margin-left: -30px;
+     -webkit-transition: all 0.6s ease-in-out;
+     transition: all 0.6s ease-in-out;
+}
+ .busi_singleTeam:hover h5{
+     margin-left: 0;
+}
+
+ .busi_singleTeam span{
+     font-size: 20px;
+     -webkit-transition: all 0.6s ease-in-out;
+     transition: all 0.6s ease-in-out;
+}
+ .busi_singleTeam:hover span{
+     margin-right: 0;
+}
+ .busiTS{
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     -webkit-transition: all 0.9s ease-in-out;
+     transition: all 0.9s ease-in-out;
+     margin-top: 8px;
+}
+ .busi_singleTeam:hover .busiTS{
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     -webkit-transition: all 0.9s ease-in-out;
+     transition: all 0.9s ease-in-out;
+}
+ .busiTS a{
+     font-size: 16px;
+     height: 34px;
+     width: 34px;
+     line-height: 30px;
+     border-radius: 50%;
+     text-align: center;
+     -webkit-transition: .5s;
+     transition: .5s;
+     display: inline-block;
+}
+ .busiTS a:hover{
+     -webkit-transform: rotate(360deg);
+             transform: rotate(360deg);
+}
+/* team style 8 */
+ .witr_team_cont_3d {
+     -o-perspective: 800px;
+     -webkit-perspective: 800px;
+             perspective: 800px;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .witr_team_cont_3d:hover .witr_team_wrap_3d {
+     -webkit-transform: rotateY( -180deg);
+             transform: rotateY( -180deg);
+}
+ .witr_team_wrap_3d {
+     -webkit-transition: -webkit-transform .5s;
+     transition: -webkit-transform .5s;
+     transition: transform .5s;
+     transition: transform .5s, -webkit-transform .5s;
+     -webkit-transform-style: preserve-3d;
+             transform-style: preserve-3d;
+     position: relative;
+     z-index: 999;
+}
+ .witr_team_front_3d, .witr_team_back_3d {
+     -webkit-backface-visibility: hidden;
+             backface-visibility: hidden;
+     position: absolute;
+     top: 0;
+     left: 0;
+}
+ .witr_team_front_3d {
+     z-index: 2;
+}
+ .witr_team_back_3d {
+     z-index: 3;
+     -webkit-transform: rotateY( -180deg);
+             transform: rotateY( -180deg);
+}
+ .witr_team_cont_3d, .witr_team_front_3d, .witr_team_back_3d {
+     height: 300px;
+     text-align: center;
+     width: 100%;
+     overflow: hidden;
+}
+ .witr_team_thumb_3d{
+     position: relative;
+}
+ .witr_team_thumb_3d:before{
+     position: absolute;
+     content: '';
+     top:0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .witr_team_thumb_3d img {
+     width: 100%;
+}
+ .witr_content_waraper {
+     left: 0;
+     padding: 64px 10px 64px;
+     position: absolute;
+     right: 0;
+     top: 50%;
+     -webkit-transform: translateY(-50%);
+             transform: translateY(-50%);
+}
+ .witr_content_3d h5 {
+     font-size: 23px;
+     margin-bottom: 0;
+     text-transform: uppercase;
+}
+ .witr_content_3d span {
+     font-size: 14px;
+     margin: 5px 0 0;
+     text-transform: uppercase;
+}
+ .witr_content_3d p {
+     margin-top: 10px;
+}
+ .witr_socials_3d {
+     margin-top: 14px;
+}
+ .witr_socials_3d a {
+     display: inline-block;
+     font-size: 18px;
+     margin: 0 6px;
+}
+/* team style 9 */
+ .cons_singleTeam {
+     position: relative;
+     text-align: center;
+     overflow: hidden;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .front_view {
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+.front_view_box {
+    padding: 33px 40px 40px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+ .front_view h5, .back_view h5{
+     margin-bottom:0px;
+}
+
+ .front_view span, .back_view span{
+     display: inline-block;
+     line-height: 28px;
+}
+ .front_view p, .back_view p{
+     margin-top: 3px;
+}
+ .front_view .con_TMS a, .back_view .con_TMS a{
+     display: inline-block;
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     font-size: 17px;
+     line-height: 35px;
+     text-align: center;
+     margin: 0 3px;
+}
+.back_view {
+    position: absolute;
+    top: 50%;
+    left: -52%;
+    width: 100%;
+	height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+ .cons_singleTeam:hover .back_view{
+     left: 50%;
+}
+ .witr_back_img:after {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     z-index: 1;
+     -webkit-transition: -webkit-transform 0.4s ease;
+     transition: -webkit-transform 0.4s ease;
+     transition: transform 0.4s ease;
+     transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+ .witr_back_img img{
+      height: 590px !important; 
+}
+ .witr_back_content{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 100%;
+     -webkit-transform: translate(-50%, -50%);
+             transform: translate(-50%, -50%);
+     z-index: 3;
+}
+
+/* team style 10 */
+ .witr_team_part{
+     overflow:hidden;
+     position:relative;
+     padding-bottom: 23px;
+}
+ .witr_team_sec_4{
+}
+ .witr_team_thumb4{
+     position:relative;
+}
+ .witr_team_thumb4:before{
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     right: -100%;
+     top: 0;
+     -webkit-transition: 1s;
+     transition: 1s;
+}
+ .witr_team_part:hover .witr_team_thumb4:before{
+     right: 0;
+}
+ .witr_team_thumb4 img{
+     width:100%;
+}
+ .witr_team_top{
+     border-radius: 5px;
+     position: absolute;
+     top: -200px;
+     right: -7px;
+     -webkit-transform: translate(-50%,-50%);
+             transform: translate(-50%,-50%);
+     -webkit-transition: 1s;
+     transition: 1s;
+}
+ .witr_team_part:hover .witr_team_top{
+     top: 100px;
+}
+ .witr_team_top ul li {
+     list-style:none;
+}
+ .witr_team_top ul li a {
+     margin: 12px 13px;
+     -webkit-transition: 1s;
+     transition: 1s;
+     display: block;
+}
+ .witr_team_content4{
+     position:relative;
+     border-radius:5px;
+     padding: 15px 30px 13px;
+     margin: 0 20px;
+     box-shadow: 0px 0px 30px 0 rgba(42,67,113,.15);
+     margin-top: -58px;
+     text-align: left;
+}
+ .witr_team_content4 h5 {
+     margin-bottom: 5px;
+}
+
+ .witr_bottom_icon{
+     position: absolute;
+     top: 50%;
+     right: 9px;
+     -webkit-transform: translate(-50%,-50%);
+             transform: translate(-50%,-50%);
+     -webkit-transition: 1s;
+     transition: 1s;
+	 z-index:1;
+}
+ .witr_team_part:hover .witr_bottom_icon{
+     top: 90%;
+}
+ .witr_bottom_icon a{
+     width: 45px;
+     height: 45px;
+     line-height: 36px;
+     display: block;
+     text-align: center;
+     border-radius: 50%;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+/* team style 11 */
+ .witr_team_s11ar{
+     box-shadow:none;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .witr_team_s11ar:hover{
+     box-shadow:0px 2px 13px 0px rgba(0, 0, 0, 0.05);
+}
+ .witr_team_s11a{
+     overflow:hidden;
+}
+ .witr_team_s11 {
+     position: absolute;
+     left: 30px;
+     bottom: -300px;
+     -webkit-transition: .5s;
+     transition:.5s;
+     opacity:0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+ .team-part:hover .witr_team_s11 {
+     bottom: 15px;
+     opacity:1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .witr_team_s11 span{
+     display: inline-block;
+     padding: 5px 30px;
+}
+ .witr_team_s11t {
+     padding: 20px 0;
+}
+/* team style 12 same as 9 */
+ .witr_team_s12 .front_view {
+     -webkit-transition: .5s;
+     transition: .5s;
+     padding: 0;
+}
+ .witr_team_s12 .w12teamcontent {
+     padding: 0px 15px 20px;
+}
+/* team style 13 front_view class from 9 no style */
+ .witr_team_s12 .front_view {
+     border: none;
+}
+ .witr_team_s12 .front_view_box {
+    border:none;
+}
+ .witr_team_s12 {
+     border: none;
+     box-shadow: 0px 5px 20px 0px #00000014;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+.witr_team_s12 .con_TMS {
+    margin-top: 30px;
+}
+ .witr_team_s13.cons_singleTeam {
+     overflow: inherit;
+}
+ .witr_team_s13{
+     position:relative;
+}
+ .team_line {
+     position: absolute;
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     -webkit-transition: .5s;
+     transition: .5s;
+     z-index: 99;
+}
+ .witr_team_s13:hover .team_line{
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .team_line_top, .team_line_bottom {
+     width: 0;
+     height: 2px;
+     left: -60px;
+}
+ .witr_team_s13:hover .team_line_top, .witr_team_s13:hover .team_line_bottom{
+     width: calc(100% + 110px);
+}
+ .team_line_top{
+     top: 0px;
+}
+ .team_line_bottom{
+     bottom: 0px;
+}
+ .team_line_left, .team_line_right{
+     height: 0;
+     width: 2px;
+     top: -60px;
+}
+ .witr_team_s13:hover .team_line_left, .witr_team_s13:hover .team_line_right{
+     height: calc(100% + 110px);
+}
+ .team_line_left{
+     left: 0px;
+}
+ .team_line_right{
+     right: 0px;
+}
+ .witr_team_s13 .front_view {
+     padding: 40px 25px 32px;
+}
+ .witr_i_position{
+     position:relative;
+}
+ .con_TMS13_icon{
+     position: absolute;
+     top: 0;
+     right: 0;
+     -webkit-transform: translateX(-50%);
+             transform: translateX(-50%);
+}
+ .front_view .con_TMS13_icon.con_TMS a{
+     display: block;
+     border-radius: 50px;
+     margin-bottom: 5px;
+     -webkit-transition: .5s;
+     transition:.5s;
+     border:none;
+}
+ .front_view .con_TMS13_icon.con_TMS a:nth-child(2), .front_view .con_TMS13_icon.con_TMS a:nth-child(3), .front_view .con_TMS13_icon.con_TMS a:nth-child(4), .front_view .con_TMS13_icon.con_TMS a:nth-child(5), .front_view .con_TMS13_icon.con_TMS a:nth-child(6){
+     -webkit-transform:scale(0);
+             transform:scale(0);
+     -webkit-transition: 1s;
+     transition:1s;
+     margin-top:-40px;
+}
+ .front_view .con_TMS13_icon.con_TMS:hover a:nth-child(2), .front_view .con_TMS13_icon.con_TMS:hover a:nth-child(3), .front_view .con_TMS13_icon.con_TMS:hover a:nth-child(4), .front_view .con_TMS13_icon.con_TMS:hover a:nth-child(5), .front_view .con_TMS13_icon.con_TMS:hover a:nth-child(6){
+     -webkit-transform:scale(1);
+             transform:scale(1);
+     margin-top:0px;
+}
+/* team style 14 */
+ .witr_team_s14{
+     -webkit-transition: 1s;
+     transition:1s;
+}
+ .witr_team_s14.cons_singleTeam {
+     overflow: inherit;
+}
+ .witr_team_s14 .front_view {
+     padding: 0;
+}
+.witr_team_s14 .con_TMS {
+    padding-bottom: 18px;
+}
+ .team_s14_image{
+     position: relative;
+}
+ .team_s14_image:before{
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 50%;
+     -webkit-animation: team_before 5s infinite linear;
+             animation: team_before 5s infinite linear;
+     opacity:0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+ @-webkit-keyframes team_before{
+     0% {
+         height: 50%;
+    }
+     50% {
+         height: 0%;
+    }
+}
+ @keyframes team_before{
+     0% {
+         height: 50%;
+    }
+     50% {
+         height: 0%;
+    }
+}
+ .team_s14_image:after{
+     content: '';
+     position: absolute;
+     right: 0;
+     top: 0;
+     height: 50%;
+     -webkit-animation: team_after 5s infinite linear;
+             animation: team_after 5s infinite linear;
+     opacity:0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+ .witr_team_s14:hover .team_s14_image:before, .witr_team_s14:hover .team_s14_image:after{
+     opacity:1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ @-webkit-keyframes team_after {
+     0% {
+         height: 50%;
+    }
+     50% {
+         height: 0%;
+    }
+}
+ @keyframes team_after {
+     0% {
+         height: 50%;
+    }
+     50% {
+         height: 0%;
+    }
+}
+ .witr_team_s14 .front_view img {
+     width: 100%;
+}
+ .wteams14 {
+     padding: 0px 0 31px;
+}
+
+
+/*======== team style 15 ===========*/
+.witr_team_thumb15{
+     overflow:hidden;
+     position:relative;
+}
+/* social top css */
+.team_top_icon {
+     position: absolute;
+     bottom: -250px;
+     right: 20px;
+     -webkit-transition: .5s;
+     transition: .5s;
+}
+ .witr_team_15n:hover .team_top_icon{
+     bottom: 70px;
+}
+ .team_top_icon ul li {
+     list-style:none;
+}
+
+/* social bottom css */
+.team_bottom_icon {
+	position: absolute;
+    bottom: 25px;
+    right: 20px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    z-index: 1;
+}
+.team_top_icon ul li a,
+.team_top_icon ul li a,
+ .team_bottom_icon a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.witr_team_content15 {
+    padding: 22px 30px;
+    text-align: center;
+    box-shadow: 0px 0px 30px 0 rgba(42,67,113,.15);
+}
+
+
+/* post team css */
+ .team_o_icon{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     -webkit-transform: translateX(-50%) translateY(-50%);
+             transform: translateX(-50%) translateY(-50%);
+     -webkit-transition: .5s;
+     transition:.5s;
+     opacity: 0;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+ .witr_team_section:hover .team_o_icon{
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .team_o_icon ul{
+}
+ .team_o_icon ul li{
+     list-style:none;
+     display:inline-block;
+}
+ .team_o_icon ul li a{
+     display: block;
+     width: 35px;
+     height: 35px;
+     line-height: 33px;
+     border-radius: 5px;
+     text-align:center;
+     -webkit-transition: .5s;
+     transition:.5s;
+     margin: 0px 2px;
+     margin-bottom: 7px;
+}
+ .team_o_icons {
+     margin-top: 15px;
+     padding-top: 17px;
+     padding-bottom: 10px;
+     position: relative;
+}
+ .team_o_icons:before {
+     position: absolute;
+     content: "";
+     top: 0px;
+     height: 1px;
+     width: 25%;
+     margin: auto;
+     left: 0;
+     right: 0;
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .all_color_team:hover .team_o_icons:before {
+     width: 100%;
+}
+ .team_o_icons ul li{
+     list-style:none;
+     display:inline-block;
+}
+ .team_o_icons ul li a{
+     display: block;
+     width: 35px;
+     height: 35px;
+     line-height: 33px;
+     border-radius: 5px;
+     text-align:center;
+     -webkit-transition: .5s;
+     transition:.5s;
+     margin: 0px 2px;
+     font-size: 15px;
+}
+
+ .pteam_8 .post_team_content {
+     text-align: left;
+}
+ .post_team_icon_8{
+     position: absolute;
+     bottom: -15px;
+}
+ .post_team_icon_8 ul{
+}
+ .post_team_icon_8 ul li{
+     display: inline-block;
+}
+ .post_team_icon_8 ul li a{
+     font-size: 16px;
+     height: 34px;
+     width: 34px;
+     line-height: 34px;
+     border-radius: 50%;
+     text-align: center;
+     -webkit-transition: .5s;
+     transition: .5s;
+     display: inline-block;
+     margin-left: 6px;
+}
+ .post_team_content{
+     box-shadow: 0px 5px 20px 0px #00000014;
+     -webkit-transition: .5s;
+     transition: .5s;
+     padding: 30px 25px 25px;
+}
+ .post_team_content h5 {
+     margin: 0;
+}
+ .team_list_op {
+     margin-top: 10px;
+}
+ .team_list_op ul{
+}
+.team_list_op ul li {
+    margin-top: 3px;
+    list-style: none;
+}
+ .team_list_op ul li a{
+     display: inline-block;
+}
+ .team_list_op ul li i{
+     margin-right: 10px;
+}
+ .team_list_op ul li a i{
+     margin-right: 6px;
+}
+ .cteam_9 .post_team_content {
+     text-align: left;
+}
+ .cteam_9 .post_team_content {
+     padding: 0px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+}
+ .post_team_icon_9{
+     padding: 10px;
+     margin-right: 20px;
+}
+
+.post_team_icon_9 ul li {
+    list-style: none;
+}
+ .post_team_icon_9 ul li a{
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .post_team10_area .team_o_icons:before{
+     display: none;
+}
+ .post_team10_area .witr_team_section{
+     position:relative;
+}
+ .post_team10_area .team_o_icons {
+     margin-top: 0;
+     padding: 0;
+     position: absolute;
+     top: 50%;
+     left: -25%;
+     -webkit-transform: translateY(-50%);
+             transform: translateY(-50%);
+     -webkit-transition: .5s;
+     transition:.5s;
+}
+ .post_team10_area .team-part:hover .team_o_icons {
+     left: 0;
+}
+ .post_team10_area .team_o_icons ul li {
+     display: block;
+}
+ .post_team10_area .team_o_icons ul li a{
+     width: 55px;
+     height: 55px;
+     line-height: 55px;
+     border: none;
+     border-radius: 0;
+     margin: 0px;
+     font-size: 20px;
+}
+ .witr_team_content{
+     padding: 23px 5px 23px;
+}
+ .post_team11_area .team-part {
+     overflow: inherit;
+     padding-bottom: 40px;
+     box-shadow: none;
+}
+.post_team_p11 {
+    position: absolute;
+    bottom: -56px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 4%);
+}
+.post_team11_area .team_o_icons {
+    top: auto;
+    bottom: -30px;
+    left: 0px;
+    right: 130px;
+    -webkit-transform: inherit;
+    transform: inherit;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+ .post_team11_area .team-part:hover .team_o_icons {
+     bottom: 65px;
+}
+ .post_team11_area .team_o_icons ul li {
+     display: inline-block;
+}
+.post_team_p11 {
+    padding: 25px 40px;
+}
+/* responsive */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.team-style-2 .em-content-title h2 {
+font-size: 17px;
+margin-top: -1px;
+}
+.team-style-2 .em-content-socials a {
+font-size: 14px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+.w_apps_button a {
+	padding: 3px 20px 11px 20px !important;
+}	
+span.igalenical {
+	font-size: 20px;
+	margin-right: 10px;
+}	
+span.spaninner {
+	font-size: 20px;
+}	
+}
+@media (max-width: 767px) {
+.witr_back_img img {
+    height: 554px !important;
+    height: auto;
+}
+.team_single_content h3 {
+    font-size: 30px;
+    margin-top: 20px;
+}	
+}
+
+
+
+
+ 
+
